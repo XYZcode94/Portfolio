@@ -1,0 +1,140 @@
+/* Modern, attractive background with gradient and subtle pattern */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f6fa 0%, #e0c3fc 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    position: relative;
+    /* Subtle pattern overlay */
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #f4f6fa 0%, #e0c3fc 100%);
+    background-blend-mode: lighten;
+}
+
+/* Header styles with accent underline */
+header {
+    background: rgba(34,34,59,0.95);
+    color: #fff;
+    padding: 2.5rem 0 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 16px rgba(34,34,59,0.12);
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+header h1::after {
+    content: '';
+    display: block;
+    margin: 0.5rem auto 0 auto;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #9a8c98 0%, #c9ada7 100%);
+}
+
+/* Work/project cards grid */
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding: 2.5rem 2rem;
+    max-width: 1200px;
+    margin: 2.5rem auto;
+}
+
+/* Individual card styles with shadow and accent border */
+.work-card {
+    background: rgba(255,255,255,0.98);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(34,34,59,0.13);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    border-left: 6px solid #9a8c98;
+    transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+    position: relative;
+    overflow: hidden;
+}
+
+.work-card:hover {
+    transform: translateY(-10px) scale(1.035);
+    box-shadow: 0 16px 40px rgba(34,34,59,0.18);
+    border-left: 6px solid #4a4e69;
+    background: #f8f7fa;
+}
+
+.work-card h2 {
+    margin-top: 0;
+    color: #4a4e69;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.work-card p {
+    color: #555;
+    font-size: 1.07rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.work-card em {
+    color: #9a8c98;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.work-card a {
+    color: #22223b;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #9a8c98;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.work-card a:hover {
+    color: #9a8c98;
+    border-bottom: 2px solid #22223b;
+}
+
+/* Add a subtle floating icon for each card (optional, for visual interest) */
+.work-card::before {
+    content: "💡";
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 1.6rem;
+    opacity: 0.13;
+    pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .work-container {
+        padding: 1.5rem 0.5rem;
+        gap: 1.5rem;
+    }
+    .work-card {
+        padding: 1.2rem 1rem 1rem 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .work-container {
+        padding: 0.5rem;
+        gap: 1rem;
+    }
+    .work-card {
+        padding: 1rem 0.7rem 0.7rem 0.7rem;
+    }
+}
