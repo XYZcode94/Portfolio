@@ -1,0 +1,461 @@
+
+/* Style.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.unimargin{
+    margin: 0 8%;
+}
+
+body{
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    transition: background 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background: rgb(255, 255, 255);
+}
+
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px 300px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+.hamburger{
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:hover{
+    color: #f91212;
+}
+
+nav ul li a.active{
+    color: #007bff;
+}
+nav ul li a.active:hover{
+    color: #0056b3;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 24px;
+    color: #333;
+
+}
+
+.hero-content{
+    margin-top: 50px;  
+    max-width: 800px;
+    color: #fff;
+}
+
+section h1{
+    font-size: 72px;
+    margin-bottom: 20px;
+}   
+
+section h2{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+section p{
+    font-size: 30px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+section a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+section a {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #000;
+    background: #fff;
+    transition: color 0.4s cubic-bezier(0.4,0,0.2,1);
+    font-size: 15px;
+}
+
+section a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #007bff;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: none;
+}
+
+section a.animate-in::before {
+    animation: slideIn 0.4s forwards;
+}
+
+section a.animate-out::before {
+    animation: slideOut 0.4s forwards;
+}
+
+section a:hover,
+section a:active {
+    color: #fff;
+}
+
+#animated-desc {
+    display: inline-block;
+    transition: none;
+    will-change: transform, opacity;
+}
+
+.desc-animate-out {
+    animation: descOut 0.4s forwards;
+}
+
+.desc-animate-in {
+    animation: descIn 0.4s forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(0); }
+}
+
+@keyframes slideOut {
+    from { transform: translateX(0); }
+    to   { transform: translateX(100%); }
+}
+
+@keyframes descOut {
+    from { opacity: 1; transform: translateY(0) rotateX(0deg);}
+    to   { opacity: 0; transform: translateY(-40px) rotateX(-90deg);}
+}
+
+@keyframes descIn {
+    from { opacity: 0; transform: translateY(40px) rotateX(90deg);}
+    to   { opacity: 1; transform: translateY(0) rotateX(0deg);}
+}
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background: #ffffff;
+
+}
+
+.about-content img{
+    width: 350px;
+    margin: 0 100px;
+}
+
+.about-content h2, .services-cards h3{
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+}
+
+.about-text{
+    align-items: center;
+}
+.about-text p, .services p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.about-text a{
+    display: inline-block;
+    padding: 10px 20px;
+    /*background: #007bff;*/
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 1px solid #007bff;
+}
+.about-text a:hover{
+    background: #0056b3;
+    color: #fff;
+}
+
+
+.connect{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #f5d3d3;
+    padding: 50px;
+}
+
+.connect-text{
+    max-width: 600px;
+}
+
+.connect-text, .connect-btn{
+    margin: 0 60px;
+}
+.connect-text h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+}
+.connect-text p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.connect-btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.connect-btn:hover{
+    background: #c9cccf;
+}
+
+.services{
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    padding: 100px;
+}
+
+.service-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+    overflow: hidden;
+}
+.card h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.fa-code, .fa-paint-brush, .fa-mobile-alt, .fa-cogs, .fa-database, .fa-cloud {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.card p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover p {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(0.97);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.text{
+    font-size: 20px !important;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background: #ffffff;
+}
+.contact-content{
+    max-width: 600px;
+    text-align: center;
+}
+.contact-content h3{
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #000;
+}
+.contact-content p{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form input,
+.contact form textarea{
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.contact form input:focus,
+.contact form textarea:focus{
+    border-color: #007bff;
+    outline: none;
+}
+.contact form button{
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #fff
+}
+.contact form button:hover{
+    background: #0056b3;
+    color: #fff;
+}   
+
+.connect-btn a{
+    color: #000000;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    color: #000;
+    position: relative;
+    border-top: 1px solid #ccc;
+    border-top-style: double;
+    background: #ffffff;
+    padding: 100px;
+}
+footer p{
+    font-size: 14px;
+    color: #000;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.social-icons a{
+    text-decoration: none;
+    color: #000;
+
+    margin: 0 10px;
+}
+
+.social-icons a:hover{
+    color: #fc9a9a;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-linkedin-in,
+.fa-github {
+    font-size: 30px;
+}
