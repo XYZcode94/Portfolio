@@ -50,8 +50,19 @@ setInterval(animateDescChange, 2000);
 //add click event to show the nav ul
 document.querySelector(".hamburger").addEventListener('click', function () {
     const navUl = document.querySelector('#nav-links');
+    const hamburgerBars = document.querySelectorAll('.bar');
     // Toggle the 'show' class to show/hide the nav ul  
     navUl.classList.toggle('show');
+    // Toggle the 'hide' class to animate the hamburger icon
+    hamburgerBars.forEach(bar => bar.classList.toggle('hide'));
+    // Optionally, toggle the icon for the hamburger button itself
+    // Example: swap between hamburger and xmark icon
+    const hamburgerBtn = document.querySelector('.hamburger');
+    if (navUl.classList.contains('show')) {
+        hamburgerBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    } else {
+        hamburgerBtn.innerHTML = '<span class="bar"></span><span class="bar"></span><span class="bar"></span>';
+    }
 });
 
 window.addEventListener('scroll', function () {
