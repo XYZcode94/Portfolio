@@ -568,6 +568,7 @@ footer p{
     section {
         font-size: 18px;
         padding: 10px;
+        height: 50vh;
     }
     .about {
         flex-direction: column;
@@ -656,7 +657,4 @@ footer p{
         pointer-events: auto !important;
         transition: none !important;
     }
-    .section{
-        height: 50vh;
-    }   
 }
