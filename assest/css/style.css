@@ -5,11 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-*{
     scroll-behavior: smooth;
-
+    font-family: "Poppins", sans-serif;
 }
 
 .unimargin{
@@ -19,11 +16,7 @@
 body{
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
-
-*{
-    font-family: "Poppins", sans-serif;
-}
-
+    
 header{
     padding: 20px 0;
     display: flex;
@@ -432,7 +425,6 @@ section a:active {
     background: #007bff;
     color: #fff;
 }   
-
 
 
 .connect-btn a:hover{
