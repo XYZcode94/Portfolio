@@ -302,6 +302,7 @@ section a:active {
     border-radius: 5px;
     transition: all 0.3s ease;
     cursor: pointer;
+    color: #000;
     border: 1px solid #007bff;
 }
 .connect-btn a:hover{
@@ -432,9 +433,7 @@ section a:active {
     color: #fff;
 }   
 
-.connect-btn a{
-    text-decoration: none;
-}
+
 
 .connect-btn a:hover{
     color: #ffffff;
