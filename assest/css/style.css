@@ -16,7 +16,7 @@
 body{
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
-    
+
 header{
     padding: 20px 0;
     display: flex;
@@ -656,4 +656,7 @@ footer p{
         pointer-events: auto !important;
         transition: none !important;
     }
+    .section{
+        height: 50vh;
+    }   
 }
