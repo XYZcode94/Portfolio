@@ -336,8 +336,8 @@ section a:active {
     color: #000;
 }
 
-.fa-code, .fa-paint-brush, .fa-mobile-alt, .fa-cogs, .fa-database, .fa-cloud {
-    font-size: 50px;
+.fa-code, .fa-paint-brush, .fa-mobile-alt, .fa-cogs, .fa-database, .fa-cloud, .fa-image, .fa-video {
+    font-size: 25px;
     color: #000000;
     margin-bottom: 15px;
 }
