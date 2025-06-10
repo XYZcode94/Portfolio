@@ -75,11 +75,3 @@ window.addEventListener('scroll', function () {
 });
 
 
-
-
-function notifyHire() {
-        document.getElementById('hireMeForm').submit();
-        alert("Thank you for your interest! You will be notified for hire requests.");
-        // Optionally, you can redirect to a thank you page or clear the form
-        document.getElementById('hireMeForm').reset();
-}                   
