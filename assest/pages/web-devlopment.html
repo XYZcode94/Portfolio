@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development | Prem Prakash Portfolio</title>
+    <meta name="description" content="Prem Prakash's web development portfolio. Explore skills, technologies, and projects in web development.">
+    <meta property="og:title" content="Web Development | Prem Prakash Portfolio">
+    <meta property="og:description" content="Explore my web development projects, skills, and services.">
+    <meta property="og:image" content="https://yourdomain.com/path/to/banner.jpg">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="../css/web-dev.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html" class="nav-link"><i class="fa fa-home"></i> Home</a>
+            <a href="#about-webdev" class="nav-link"><i class="fa fa-user"></i> About</a>
+            <a href="#webdev-projects" class="nav-link"><i class="fa fa-folder-open"></i> Projects</a>
+            <a href="#skills" class="nav-link"><i class="fa fa-code"></i> Skills</a>
+            <a href="#contact" class="nav-link"><i class="fa fa-envelope"></i> Contact</a>
+        </nav>
+        <div class="hero">
+            <h1><i class="fa fa-laptop-code"></i> Web Development</h1>
+            <p class="subtitle">Crafting modern, scalable, and beautiful web experiences</p>
+            <img src="../image/web-development.jpg" alt="Web Development Banner" class="hero-img" />
+        </div>
+    </header>
+    <main>
+        <section aria-labelledby="about-webdev">
+            <h2 id="about-webdev"><i class="fa fa-user"></i> About My Web Development</h2>
+            <p>
+                I am passionate about building modern, responsive, and user-friendly websites using the latest technologies. My focus is on creating solutions that are visually appealing, highly functional, and optimized for performance and accessibility.
+            </p>
+            <div class="about-highlights" data-aos="fade-up">
+                <div>
+                    <i class="fa fa-bolt"></i>
+                    <h4>Performance</h4>
+                    <p>Fast load times and lag-free interaction are my priorities.</p>
+                </div>
+                <div>
+                    <i class="fa fa-mobile-alt"></i>
+                    <h4>Responsive Design</h4>
+                    <p>Websites that look great on any device, from mobile to desktop.</p>
+                </div>
+                <div>
+                    <i class="fa fa-universal-access"></i>
+                    <h4>Accessibility</h4>
+                    <p>Inclusive design for all users, following WCAG guidelines.</p>
+                </div>
+                <div>
+                    <i class="fa fa-lock"></i>
+                    <h4>Security</h4>
+                    <p>Best practices for secure, robust, and reliable web applications.</p>
+                </div>
+            </div>
+            <a href="../docs/CV.pdf" class="btn download-cv" download>
+                <i class="fa fa-download"></i> Download CV
+            </a>
+        </section>
+
+        <section aria-labelledby="skills">
+            <h2 id="skills"><i class="fa-solid fa-graduation-cap"></i> Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div><i class="fab fa-html5"></i> HTML5</div>
+                <div><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div><i class="fab fa-js-square"></i> JavaScript (ES6+)</div>
+                <div><i class="fab fa-react"></i> React</div>
+                <div><i class="fab fa-node-js"></i> Node.js</div>
+                <div><i class="fab fa-git-alt"></i> Git & GitHub</div>
+                <div><i class="fa fa-database"></i> MongoDB</div>
+                <div><i class="fa fa-server"></i> REST APIs</div>
+                <div><i class="fa fa-cubes"></i> Responsive Design</div>
+                <div><i class="fa fa-tachometer-alt"></i> Performance Optimization</div>
+                <div><i class="fa fa-universal-access"></i> Accessibility</div>
+                <div><i class="fa fa-cloud"></i> Deployment (Vercel, Netlify)</div>
+            </div>
+        </section>
+
+        <section aria-labelledby="webdev-projects">
+            <h2 id="webdev-projects"><i class="fa fa-folder-open"></i> Projects</h2>
+            <div class="projects-list">
+                <article>
+                    <h3><i class="fa fa-user-circle"></i> Portfolio Website</h3>
+                    <p>A personal portfolio site to showcase my work, built with HTML, CSS, and JavaScript. Features responsive design, smooth animations, and a contact form.</p>
+                    <ul>
+                        <li><strong>Tech:</strong> HTML5, CSS3, JavaScript</li>
+                        <li><strong>Features:</strong> Responsive, animated, downloadable CV</li>
+                    </ul>
+                    <a href="../../index.html" class="btn" target="_blank"><i class="fa fa-eye"></i> View Project</a>
+                </article>
+                <article>
+                    <h3><i class="fa fa-shopping-cart"></i> E-Commerce Platform</h3>
+                    <p>Developed a full-stack e-commerce web app with product listings, cart, and secure checkout.</p>
+                    <ul>
+                        <li><strong>Tech:</strong> React, Node.js, Express, MongoDB</li>
+                        <li><strong>Features:</strong> User authentication, payment integration, admin dashboard</li>
+                    </ul>
+                    <a href="#" class="btn" target="_blank"><i class="fa fa-eye"></i> Demo Coming Soon</a>
+                </article>
+                <article>
+                    <h3><i class="fa fa-blog"></i> Blogging Platform</h3>
+                    <p>A modern blogging platform with markdown support, user profiles, and comments.</p>
+                    <ul>
+                        <li><strong>Tech:</strong> Vue.js, Node.js, MongoDB</li>
+                        <li><strong>Features:</strong> Markdown editor, comments, user authentication</li>
+                    </ul>
+                    <a href="#" class="btn" target="_blank"><i class="fa fa-eye"></i> Demo Coming Soon</a>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="testimonials">
+            <h2 id="testimonials"><i class="fa fa-comment"></i> Testimonials</h2>
+            <div class="testimonial-container" id="testimonialContainer">
+                <!-- Testimonials will be injected here by JS -->
+            </div>
+            <div class="testimonial-controls">
+                <button id="prevTestimonial" aria-label="Previous testimonial"><i class="fa fa-chevron-left"></i></button>
+                <button id="nextTestimonial" aria-label="Next testimonial"><i class="fa fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section aria-labelledby="contact">
+            <h2 id="contact"><i class="fa fa-envelope"></i> Contact Me</h2>
+            <p>Interested in working together or have a project idea? Reach out!</p>
+            <form class="contact-form" action="mailto:newmail9472@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn"><i class="fa fa-paper-plane"></i> Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Prem Prakash | <a href="mailto:newmail9472@gmail.com">newmail9472@gmail.com</a></p>
+        <div class="footer-social">
+            <a href="https://github.com/xyzcode94" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/your-twitter" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.reddit.com/user/your-reddit" target="_blank" title="Reddit"><i class="fab fa-reddit"></i></a>
+            <a href="https://instagram.com/your-instagram" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <button id="backToTop" title="Back to top"><i class="fa fa-arrow-up"></i></button>
+    <script src="../script/web-dev.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

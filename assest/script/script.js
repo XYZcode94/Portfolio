@@ -74,4 +74,23 @@ window.addEventListener('scroll', function () {
     }
 });
 
+// Open a specific page when a card with a specific id is clicked
+const cardLinks = {
+    "web-development": "assest/pages/web-devlopment.html",
+    "mobile-development": "assest/pages/mobile-development.html",
+    "ui-ux-design": "assest/pages/ui-ux-design.html",
+    "database-management": "assest/pages/database-management.html",
+    "ai-ml": "assest/pages/ai-ml.html",
+    "video-editing": "assest/pages/video-editing.html"
+};
+
+Object.keys(cardLinks).forEach(id => {
+    const card = document.getElementById(id);
+    if (card) {
+        card.addEventListener('click', function () {
+            window.open(cardLinks[id], '_blank'); // opens in a new tab
+        });
+    }
+});
+
 
