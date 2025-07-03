@@ -10,10 +10,9 @@ body {
 
 /* Header styles */
 header {
-    background: url('') no-repeat center center fixed, linear-gradient(90deg, #22223b 60%, #4a4e69 100%);
+    background: linear-gradient(90deg, #22223b 60%, #4a4e69 100%);
     color: #fff;
     background-position: center;
-    background-size: cover;
     padding: 0 0 2rem 0;
     text-align: center;
     letter-spacing: 1px;
@@ -25,14 +24,6 @@ header {
     padding: 2rem 0 0.5rem 0;
 }
 
-.hero-img {
-    width: 220px;
-    max-width: 90vw;
-    margin: 1.5rem auto 0 auto;
-    display: block;
-    border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(34,34,59,0.08);
-}
 
 header h1 {
     margin: 0.5rem 0 0 0;
