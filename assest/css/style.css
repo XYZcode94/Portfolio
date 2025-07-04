@@ -37,7 +37,9 @@ header.scrolled {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin: 0px 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 nav{
@@ -112,9 +114,7 @@ section{
     padding: 20px;
     font-size: 24px;
     color: #333;
-
 }
-
 .hero-content{
     margin-top: 50px;  
     max-width: 800px;
@@ -320,6 +320,7 @@ section a:active {
 
 .card{
     width: 300px;
+    max-width: 95vw;
     height: 300px;
     background: #f8f9fa;
     border-radius: 10px;
