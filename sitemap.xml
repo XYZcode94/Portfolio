@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://yourdomain.com/</loc>
-        <lastmod>2024-06-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <!-- Add more <url> entries as needed -->
-</urlset>
-
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://xyzcode94.github.io/Portfolio/</loc>
@@ -18,40 +7,47 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://xyzcode94.github.io/Portfolio/assest/pages/web-development.html</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://xyzcode94.github.io/Portfolio/assest/pages/mobile-development.html</loc>
     <lastmod>2025-07-04</lastmod>
-    <changefreq>monthly</changefreq
+    <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://xyzcode94.github.io/Portfolio/assest/pages/ui-ux-design.html</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
-    <loc>https://xyzcode94.github.io/Portfolio/assest/pages/database-management.html</loc>
+    <loc>https://xyzcode94.github.io/Portfolio/assest/pages/database.html</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://xyzcode94.github.io/Portfolio/assest/pages/ai-ml.html</loc>
     <lastmod>2025-07-04</lastmod>
-    <changefreq>monthly</changefreq
+    <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://xyzcode94.github.io/Portfolio/assest/pages/video-editing.html</loc>
     <lastmod>2025-07-04</lastmod>
     <changefreq>monthly</changefreq>
   </url>
+
   <url>
     <loc>https://xyzcode94.github.io/Portfolio/assest/pages/thankyou.html</loc>
     <lastmod>2025-07-04</lastmod>
-    <changefreq>yearly</changefreq
+    <changefreq>yearly</changefreq>
   </url>
 
 </urlset>
