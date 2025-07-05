@@ -8,12 +8,12 @@
     <priority>1.0</priority>
   </url>
 
-  <url><loc>https://xyzcode94.github.io/Portfolio/assest/pages/web-development.html</loc></url>
-  <url><loc>https://xyzcode94.github.io/Portfolio/assest/pages/mobile-development.html</loc></url>
-  <url><loc>https://xyzcode94.github.io/Portfolio/assest/pages/ui-ux-design.html</loc></url>
-  <url><loc>https://xyzcode94.github.io/Portfolio/assest/pages/database.html</loc></url>
-  <url><loc>https://xyzcode94.github.io/Portfolio/assest/pages/ai-ml.html</loc></url>
-  <url><loc>https://xyzcode94.github.io/Portfolio/assest/pages/video-editing.html</loc></url>
-  <url><loc>https://xyzcode94.github.io/Portfolio/assest/pages/thankyou.html</loc></url>
+  <url><loc>https://xyzcode94.github.io/Portfolio/assests/pages/web-development.html</loc></url>
+  <url><loc>https://xyzcode94.github.io/Portfolio/assests/pages/mobile-development.html</loc></url>
+  <url><loc>https://xyzcode94.github.io/Portfolio/assests/pages/ui-ux-design.html</loc></url>
+  <url><loc>https://xyzcode94.github.io/Portfolio/assests/pages/database-management.html</loc></url>
+  <url><loc>https://xyzcode94.github.io/Portfolio/assests/pages/ai-ml.html</loc></url>
+  <url><loc>https://xyzcode94.github.io/Portfolio/assests/pages/video-editing.html</loc></url>
+  <url><loc>https://xyzcode94.github.io/Portfolio/assests/pages/thankyou.html</loc></url>
 
 </urlset>
