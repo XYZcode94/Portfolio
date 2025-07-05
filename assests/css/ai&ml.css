@@ -171,6 +171,11 @@ button.btn {
     width: fit-content;
     align-self: flex-start;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button.btn:hover{
+    transform: scale(1.1);
 }
 
 /* ===== Footer ===== */

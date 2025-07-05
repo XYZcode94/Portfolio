@@ -1,8 +1,23 @@
+:root {
+    --accent: #21897E;
+    --dark: #6457a6;
+    --primary: #7D7ABC;
+    --text: #22223b;
+    --heading: #4a4e69;
+    --highlight: #eb8a90;
+    --light: #f0f4fa;
+    --light-bg: #f5faff;
+    --hover-bg: #e0ecff;
+    --border: #c9d6ff;
+    --bg-gradient: linear-gradient(135deg, var(--light-bg) 0%, #fff 100%);
+}
+
+
 /* Base styles */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #f5faff 0%, #e0ecff 100%);
-    color: #22223b;
+    background: linear-gradient(135deg, var(--light) 0%, #fff 100%);
+    color: var(--text);
     margin: 0;
     line-height: 1.7;
     min-height: 100vh;
@@ -10,10 +25,9 @@ body {
 
 /* Header styles */
 header {
-    background: linear-gradient(90deg, #22223b 60%, #4a4e69 100%);
+    background: linear-gradient(90deg, var(--primary) 60%, var(--dark) 100%);
     color: #fff;
     background-position: center;
-    padding: 0 0 2rem 0;
     text-align: center;
     letter-spacing: 1px;
     box-shadow: 0 2px 12px rgba(34, 34, 59, 0.08);
@@ -22,6 +36,7 @@ header {
 
 .hero {
     padding: 2rem 0 0.5rem 0;
+    background: var(--dark);
 }
 
 
@@ -42,10 +57,10 @@ header h1 {
 
 /* Navigation styles */
 nav {
-    background: #4a4e69;
+    background: var(--dark);
     padding: 1rem 0 0.7rem 0;
     text-align: center;
-    border-bottom: 1px solid #22223b;
+    border-bottom: 1px solid var(--dark);
 }
 
 nav a {
@@ -63,7 +78,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: #9a8c98;
+    color: var(--highlight);
     border-bottom: 2px solid #9a8c98;
     text-decoration: none;
 }
@@ -107,7 +122,7 @@ h3 {
 }
 
 .about-highlights>div {
-    background: #f0f4fa;
+    background: var(--light);
     border-radius: 10px;
     padding: 1.2rem 1rem;
     flex: 1 1 220px;
@@ -135,13 +150,13 @@ h3 {
 }
 
 .skills-grid div {
-    background: #f5faff;
+    background: var(--light-bg);
     border-radius: 8px;
     padding: 1rem 0.5rem;
     text-align: center;
     font-weight: 500;
     font-size: 1rem;
-    color: #22223b;
+    color: var(--text);
     box-shadow: 0 1px 4px rgba(34, 34, 59, 0.06);
     transition: background 0.2s, color 0.2s;
     word-break: break-word;
@@ -156,7 +171,7 @@ h3 {
 }
 
 .projects-list article {
-    background: #f0f4fa;
+    background: var(--light);
     border-radius: 10px;
     padding: 1.1rem 1rem 1rem 1rem;
     box-shadow: 0 1px 4px rgba(34, 34, 59, 0.08);
@@ -170,7 +185,7 @@ h3 {
 
 .projects-list h3 {
     margin-top: 0;
-    color: #0077b6;
+    color: var(--accent);
     font-size: 1.08rem;
     word-break: break-word;
 }
@@ -189,7 +204,7 @@ h3 {
 .projects-list a.btn {
     display: inline-block;
     margin-top: 0.7rem;
-    background: #22223b;
+    background: var(--dark);
     color: #fff;
     padding: 0.5rem 1.2rem;
     border-radius: 4px;
@@ -202,7 +217,7 @@ h3 {
 }
 
 .projects-list a.btn:hover {
-    background: #0077b6;
+    background: var(--accent);
     transform: scale(1.07);
 }
 
@@ -213,7 +228,7 @@ h3 {
     gap: 1rem;
     max-width: 420px;
     margin: 1.5rem auto 0 auto;
-    background: #f5faff;
+    background: var(--light-bg);
     padding: 1.5rem 1.2rem;
     border-radius: 10px;
     box-shadow: 0 1px 4px rgba(34, 34, 59, 0.08);
@@ -224,13 +239,13 @@ h3 {
 
 .contact-form input,
 .contact-form textarea {
-    border: 1px solid #c9d6ff;
+    border: 1px solid var(--border);
     border-radius: 5px;
     padding: 0.7rem 0.9rem;
     font-size: 1rem;
     font-family: inherit;
     background: #fff;
-    color: #22223b;
+    color: var(--text);
     transition: border 0.2s;
     resize: none;
     box-sizing: border-box;
@@ -244,12 +259,12 @@ h3 {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border: 1.5px solid #0077b6;
+    border: 1.5px solid var(--accent);
     outline: none;
 }
 
 .contact-form button.btn {
-    background: #0077b6;
+    background: var(--accent);
     color: #fff;
     border: none;
     padding: 0.7rem 1.5rem;
@@ -263,7 +278,7 @@ h3 {
 }
 
 .contact-form button.btn:hover {
-    background: #22223b;
+    background: var(--dark);
     transform: scale(1.05);
 }
 
@@ -273,7 +288,7 @@ h2 {
     margin-top: 2.5rem;
     font-weight: 800;
     letter-spacing: 1.5px;
-    color: #22223b;
+    color: var(--text);
     position: relative;
     display: inline-block;
     padding-left: 2.2rem;
@@ -281,11 +296,11 @@ h2 {
     background: linear-gradient(90deg, #e0ecff 60%, #fff 100%);
     border-radius: 0 18px 18px 0;
     box-shadow: 0 2px 8px rgba(34, 34, 59, 0.06);
-    border-left: 5px solid #0077b6;
+    border-left: 5px solid var(--accent);
 }
 
 h2 i {
-    color: #0077b6;
+    color: var(--accent);
     margin-right: 0.7rem;
     font-size: 1.2em;
     vertical-align: middle;
@@ -294,7 +309,7 @@ h2 i {
 /* Simple Download CV button style */
 .download-cv {
     margin: 1.5rem 0 1rem 0;
-    background: #0077b6;
+    background: var(--accent);
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
@@ -332,18 +347,18 @@ footer {
     font-size: 1rem;
     margin-top: 2rem;
     background: transparent;
-    border-top: 1px solid #e0ecff;
+    border-top: 1px solid var(--light);
     letter-spacing: 0.5px;
 }
 
 footer a {
-    color: #0077b6;
+    color: var(--accent);
     text-decoration: none;
     transition: color 0.2s;
 }
 
 footer a:hover {
-    color: #22223b;
+    color: var(--text);
     text-decoration: underline;
 }
 
@@ -352,7 +367,7 @@ footer a:hover {
 }
 
 .footer-social a {
-    color: #22223b;
+    color: var(--text);
     margin: 0 0.5rem;
     font-size: 1.5rem;
     transition: color 0.2s, transform 0.2s;
@@ -361,7 +376,7 @@ footer a:hover {
 }
 
 .footer-social a:hover {
-    color: #0077b6;
+    color: var(--accent);
     transform: scale(1.2) rotate(-8deg);
 }
 
@@ -376,7 +391,7 @@ html {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background: #22223b;
+    background: var(--dark);
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -391,7 +406,7 @@ html {
 
 #backToTop:hover,
 #backToTop:focus {
-    background: #0077b6;
+    background: var(--accent);
     transform: scale(1.12);
     outline: none;
 }
@@ -405,15 +420,15 @@ html {
 }
 
 .testimonial {
-    background: #f5faff;
-    border-left: 5px solid #0077b6;
+    background: var(--light-bg);
+    border-left: 5px solid var(--accent);
     border-radius: 10px;
     padding: 1.5rem 1.2rem 1.2rem 2rem;
     margin: 0 auto;
     box-shadow: 0 2px 8px rgba(34, 34, 59, 0.08);
     font-style: italic;
     position: relative;
-    color: #22223b;
+    color: var(--text);
 }
 
 .testimonial p {
@@ -423,7 +438,7 @@ html {
 
 .testimonial footer {
     font-size: 0.95rem;
-    color: #0077b6;
+    color: var(--accent);
     font-style: normal;
     font-weight: 600;
     margin-top: 0.5rem;
@@ -437,7 +452,7 @@ html {
 }
 
 .testimonial-controls button {
-    background: #0077b6;
+    background: var(--accent);
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -454,7 +469,7 @@ html {
 
 .testimonial-controls button:hover,
 .testimonial-controls button:focus {
-    background: #4a4e69;
+    background: var(--dark);
     transform: scale(1.12);
     outline: none;
 }
@@ -493,7 +508,7 @@ h3 {
     padding: 1.2rem 1rem;
     min-width: 160px;
     max-width: 100%;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 /* Skills Grid */

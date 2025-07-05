@@ -72,7 +72,7 @@ header h1::after {
 
 .work-card h2 {
     margin-top: 0;
-    color: #4a4e69;
+    color: var(--heading);
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -86,13 +86,13 @@ header h1::after {
 }
 
 .work-card em {
-    color: #9a8c98;
+    color: var(--highlight);
     font-style: normal;
     font-weight: 600;
 }
 
 .work-card a {
-    color: #22223b;
+    color: var(--text);
     text-decoration: none;
     font-weight: 600;
     border-bottom: 2px solid #9a8c98;
@@ -100,7 +100,7 @@ header h1::after {
 }
 
 .work-card a:hover {
-    color: #9a8c98;
+    color: var(--highlight);
     border-bottom: 2px solid #22223b;
 }
 

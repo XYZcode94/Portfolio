@@ -1,7 +1,7 @@
 /* Style.css */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,15 +9,15 @@
     font-family: "Poppins", sans-serif;
 }
 
-.unimargin{
+.unimargin {
     margin: 0 8%;
 }
 
-body{
+body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-header{
+header {
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@ header.scrolled {
 }
 
 
-.nav-bar{
+.nav-bar {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -42,7 +42,7 @@ header.scrolled {
     padding: 0 24px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,16 +50,9 @@ nav{
 }
 
 nav ul {
-    display: none;
+    display: block;
     list-style: none;
-    opacity: 0;
-    transform: translateY(-20px) scaleY(0.95);
-    transition: 
-        opacity 0.4s cubic-bezier(0.4,0,0.2,1),
-        transform 0.4s cubic-bezier(0.4,0,0.2,1),
-        max-height 0.4s cubic-bezier(0.4,0,0.2,1);
-    max-height: 0;
-    will-change: opacity, transform, max-height;
+    display: flex;
 }
 
 .show {
@@ -67,23 +60,23 @@ nav ul {
     opacity: 1;
     transform: translateY(0) scaleY(1);
     max-height: 500px;
-    transition: 
-        opacity 0.4s cubic-bezier(0.4,0,0.2,1),
-        transform 0.4s cubic-bezier(0.4,0,0.2,1),
-        max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+    transition:
+        opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-nav ul li{
+nav ul li {
     margin: 0 15px;
 }
 
-.hamburger{
-    display: block;
+.hamburger {
+    display: none;
     cursor: pointer;
     position: relative;
 }
 
-.bar{
+.bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -91,23 +84,25 @@ nav ul li{
     background-color: #333;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #000;
+    font-weight: 600;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #f91212;
 }
 
-nav ul li a.active{
+nav ul li a.active {
     color: #007bff;
 }
-nav ul li a.active:hover{
+
+nav ul li a.active:hover {
     color: #0056b3;
 }
 
-section{
+section {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -115,27 +110,30 @@ section{
     font-size: 24px;
     color: #333;
 }
-.hero-content{
-    margin-top: 50px;  
+
+.hero-content {
+    margin-top: 50px;
     max-width: 800px;
     color: #fff;
 }
 
-section h1{
+section h1 {
     font-size: 72px;
     margin-bottom: 20px;
-}   
+}
 
-section h2{
+section h2 {
     font-size: 70px;
     margin-bottom: 20px;
 }
-section p{
+
+section p {
     font-size: 30px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
-section a{
+
+section a {
     display: inline-block;
     padding: 10px 20px;
     background: #fff;
@@ -151,7 +149,7 @@ section a {
     z-index: 1;
     color: #000;
     background: #fff;
-    transition: color 0.4s cubic-bezier(0.4,0,0.2,1);
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 15px;
 }
 
@@ -196,27 +194,51 @@ section a:active {
 }
 
 @keyframes slideIn {
-    from { transform: translateX(-100%); }
-    to   { transform: translateX(0); }
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 @keyframes slideOut {
-    from { transform: translateX(0); }
-    to   { transform: translateX(100%); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
 }
 
 @keyframes descOut {
-    from { opacity: 1; transform: translateY(0) rotateX(0deg);}
-    to   { opacity: 0; transform: translateY(-40px) rotateX(-90deg);}
+    from {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-40px) rotateX(-90deg);
+    }
 }
 
 @keyframes descIn {
-    from { opacity: 0; transform: translateY(40px) rotateX(90deg);}
-    to   { opacity: 1; transform: translateY(0) rotateX(0deg);}
+    from {
+        opacity: 0;
+        transform: translateY(40px) rotateX(90deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
 }
 
 
-.about{
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,27 +247,31 @@ section a:active {
 
 }
 
-.about-content img{
+.about-content img {
     width: 350px;
     margin: 0 100px;
 }
 
-.about-content h2, .services-cards h3{
+.about-content h2,
+.services-cards h3 {
     font-size: 50px;
     margin-bottom: 15px;
     color: #000;
     font-family: "Open Sans", sans-serif;
 }
 
-.about-text{
+.about-text {
     align-items: center;
 }
-.about-text p, .services p{
+
+.about-text p,
+.services p {
     font-size: 15px;
     margin-bottom: 20px;
     color: #000;
 }
-.about-text a{
+
+.about-text a {
     display: inline-block;
     padding: 10px 20px;
     /*background: #007bff;*/
@@ -255,13 +281,14 @@ section a:active {
     transition: all 0.3s ease;
     border: 1px solid #007bff;
 }
-.about-text a:hover{
+
+.about-text a:hover {
     background: #007bff;
     color: #fff;
 }
 
 
-.connect{
+.connect {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -269,25 +296,29 @@ section a:active {
     padding: 50px;
 }
 
-.connect-text{
+.connect-text {
     max-width: 600px;
 }
 
-.connect-text, .connect-btn{
+.connect-text,
+.connect-btn {
     margin: 0 60px;
 }
-.connect-text h2{
+
+.connect-text h2 {
     font-size: 50px;
     margin-bottom: 15px;
     color: #000;
     font-family: "Open Sans", sans-serif;
 }
-.connect-text p{
+
+.connect-text p {
     font-size: 15px;
     margin-bottom: 20px;
     color: #000;
 }
-.connect-btn a{
+
+.connect-btn a {
     display: inline-block;
     padding: 12px 30px;
     background: #ffffff;
@@ -298,19 +329,20 @@ section a:active {
     color: #000;
     border: 1px solid #007bff;
 }
-.connect-btn a:hover{
+
+.connect-btn a:hover {
     background: #007bff;
     color: #fff;
 }
 
-.services{
+.services {
     align-items: center;
     text-align: center;
     background: #ffffff;
     padding: 100px;
 }
 
-.service-cards{
+.service-cards {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,7 +350,7 @@ section a:active {
     margin-top: 50px;
 }
 
-.card{
+.card {
     width: 300px;
     max-width: 95vw;
     height: 300px;
@@ -327,11 +359,12 @@ section a:active {
     /*padding: 20px;*/
     margin: 10px 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     overflow: hidden;
     display: flex;
 }
+
 .card img {
     width: 100%;
     height: 100%;
@@ -339,9 +372,10 @@ section a:active {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
+
 .card:hover img {
     transform: scale(1.05);
-}   
+}
 
 .card .image_overlay {
     position: absolute;
@@ -359,25 +393,33 @@ section a:active {
     padding: 10px;
     pointer-events: none;
 }
+
 .card:hover .image_overlay {
     opacity: 1;
     pointer-events: auto;
 }
 
 
-.card h3{
+.card h3 {
     font-size: 24px;
     margin-bottom: 15px;
     color: #000;
 }
 
-.fa-code, .fa-paint-brush, .fa-mobile-alt, .fa-cogs, .fa-database, .fa-cloud, .fa-image, .fa-video {
+.fa-code,
+.fa-paint-brush,
+.fa-mobile-alt,
+.fa-cogs,
+.fa-database,
+.fa-cloud,
+.fa-image,
+.fa-video {
     font-size: 25px;
     color: #000000;
     margin-bottom: 15px;
 }
 
-.card p{
+.card p {
     font-size: 16px;
     margin-bottom: 20px;
     color: #000;
@@ -399,40 +441,46 @@ section a:active {
 
 .card:hover {
     transform: translateY(-10px) scale(0.97);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.text{
+.text {
     font-size: 20px !important;
 }
-.contact{
+
+.contact {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 100px;
     background: #ffffff;
 }
-.contact-content{
+
+.contact-content {
     max-width: 600px;
     text-align: center;
 }
-.contact-content h3{
+
+.contact-content h3 {
     font-size: 50px;
     margin-bottom: 15px;
     color: #000;
 }
-.contact-content p{
+
+.contact-content p {
     font-size: 15px;
     margin-bottom: 20px;
     color: #000;
 }
-.contact form{
+
+.contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .contact form input,
-.contact form textarea{
+.contact form textarea {
     width: 100%;
     max-width: 400px;
     padding: 10px;
@@ -441,12 +489,14 @@ section a:active {
     border-radius: 5px;
     font-size: 16px;
 }
+
 .contact form input:focus,
-.contact form textarea:focus{
+.contact form textarea:focus {
     border-color: #007bff;
     outline: none;
 }
-.contact form button{
+
+.contact form button {
     padding: 10px 20px;
     border: 1px solid #007bff;
     color: #000;
@@ -456,17 +506,18 @@ section a:active {
     transition: all 0.3s ease;
     background: #fff
 }
-.contact form button:hover{
+
+.contact form button:hover {
     background: #007bff;
     color: #fff;
-}   
+}
 
 
-.connect-btn a:hover{
+.connect-btn a:hover {
     color: #ffffff;
 }
 
-footer{
+footer {
     text-align: center;
     color: #000;
     position: relative;
@@ -475,25 +526,27 @@ footer{
     background: #ffffff;
     padding: 100px;
 }
-footer p{
+
+footer p {
     font-size: 14px;
     color: #000;
 }
 
-.social-icons{
+.social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
-.social-icons a{
+
+.social-icons a {
     text-decoration: none;
     color: #000;
     margin: 0 10px;
     transition: color 0.2s, transform 0.2s;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: #0084ff;
     transform: scale(1.2) rotate(-8deg);
 }
@@ -505,20 +558,28 @@ footer p{
 .fa-github,
 .fa-user,
 .fa-discord,
-.fa-reddit{
+.fa-reddit {
     font-size: 25px;
 }
 
-.fa-user{
+.fa-envelope,
+.fa-folder-open,
+.fa-home,
+.fa-user-tie {
+    font-size: 1.08rem;
+    font-weight: 600;
+}
+
+.fa-user {
     margin: 0 10px;
 }
 
-.fa-xmark{
+.fa-xmark {
     font-size: 30px;
     cursor: pointer;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
@@ -527,10 +588,15 @@ footer p{
     .unimargin {
         margin: 0 3%;
     }
+
     .nav-bar {
         margin: 0 40px;
     }
-    .about, .services, .contact, footer {
+
+    .about,
+    .services,
+    .contact,
+    footer {
         padding: 60px 10px;
     }
 }
@@ -539,36 +605,60 @@ footer p{
     .nav-bar {
         margin: 0 10px;
     }
-    .about, .services, .contact, footer {
+
+    .about,
+    .services,
+    .contact,
+    footer {
         padding: 40px 5px;
     }
+
     .about-content img {
         width: 250px;
     }
+
     .card {
         width: 80%;
     }
 }
 
 @media (max-width: 768px) {
+
+    nav ul {
+        display: none;
+        list-style: none;
+        opacity: 0;
+        transform: translateY(-20px) scaleY(0.95);
+        transition:
+            opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        max-height: 0;
+        will-change: opacity, transform, max-height;
+    }
+
     .nav-bar {
         margin: 0 10px;
         flex-direction: column;
         align-items: flex-start;
         transition: all 0.3s ease;
     }
+
     header {
         padding: 10px 0;
     }
+
     .hamburger {
         display: block;
         z-index: 4;
     }
+
     nav {
         padding: 1px;
         justify-content: flex-end;
         width: 100%;
     }
+
     nav ul {
         width: 100vw;
         position: absolute;
@@ -579,73 +669,93 @@ footer p{
         background: #ffffff;
         padding: 20px 0;
         z-index: 2;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
         transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
         transform: translateY(-20px);
     }
+
     nav ul.show {
         max-height: 500px;
         opacity: 1;
         transform: translateY(0);
     }
+
     nav ul li {
         margin: 15px 0;
         text-align: center;
     }
+
     .hero-content h1 {
         font-size: 36px;
     }
+
     .hero-content h2 {
         font-size: 28px;
     }
+
     section {
         font-size: 18px;
         padding: 10px;
         height: 50vh;
     }
+
     .about {
         flex-direction: column;
         padding: 40px 10px;
     }
+
     .about-content img {
         width: 80vw;
         margin: 0 0 20px 0;
         max-width: 300px;
     }
+
     .about-text {
         text-align: center;
     }
+
     .connect {
         flex-direction: column;
         text-align: center;
         padding: 30px 10px;
     }
-    .connect-text, .connect-btn {
+
+    .connect-text,
+    .connect-btn {
         margin: 20px 0;
     }
+
     .services {
         padding: 40px 10px;
     }
+
     .service-cards {
         flex-direction: column;
         align-items: center;
     }
+
     .card {
         width: 95vw;
         max-width: 350px;
         margin: 15px 0;
     }
+
     .contact {
         flex-direction: column;
         padding: 40px 10px;
     }
+
     .contact-content {
         width: 100%;
         max-width: 100%;
+        background: aliceblue;
+        padding: 10px 20px;
+        border-radius: 7px;
     }
+
     footer {
         padding: 40px 10px;
     }
@@ -655,31 +765,54 @@ footer p{
     .hero-content h1 {
         font-size: 24px;
     }
+
     .hero-content h2 {
         font-size: 18px;
     }
-    section p, .about-text p, .services p, .connect-text p, .contact-content p {
+
+    section p,
+    .about-text p,
+    .services p,
+    .connect-text p,
+    .contact-content p {
         font-size: 13px;
     }
+
     .about-content img {
         width: 95vw;
         max-width: 200px;
     }
-    .about-content h2, .services-cards h3, .connect-text h2, .contact-content h3 {
+
+    .about-content h2,
+    .services-cards h3,
+    .connect-text h2,
+    .contact-content h3 {
         font-size: 28px;
     }
-    .connect-btn, .about-text a, section a, .contact form button {
+
+    .connect-btn,
+    .about-text a,
+    section a,
+    .contact form button {
         font-size: 13px;
         padding: 8px 14px;
     }
+
     .card {
         max-width: 95vw;
         min-width: 0;
         padding: 10px;
     }
-    .fa-code, .fa-paint-brush, .fa-mobile-alt, .fa-cogs, .fa-database, .fa-cloud {
+
+    .fa-code,
+    .fa-paint-brush,
+    .fa-mobile-alt,
+    .fa-cogs,
+    .fa-database,
+    .fa-cloud {
         font-size: 32px;
     }
+
     .social-icons a {
         margin: 0 5px;
     }
