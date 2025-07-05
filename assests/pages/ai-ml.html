@@ -1,50 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI & ML Projects | Portfolio</title>
-    <link rel="stylesheet" href="../styles/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prem Prakash | AI & ML Portfolio</title>
+    <meta name="description"
+        content="AI & ML portfolio of Prem Prakash – Full-stack developer and machine learning enthusiast.">
+    <meta name="author" content="Prem Prakash">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="../css/ai&ml.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
+
 <body>
+    <!-- Hamburger Button -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
     <header>
-        <h1>Artificial Intelligence & Machine Learning Projects</h1>
         <nav>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="ai-ml.html" class="active">AI & ML</a></li>
-                <li><a href="web-dev.html">Web Development</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="#" class="nav-link"><i class="fa fa-home"></i> Home</a>
+            <a href="#about" class="nav-link"><i class="fa fa-user"></i> About Me</a>
+            <a href="#projects" class="nav-link"><i class="fa fa-brain"></i> Projects</a>
+            <a href="#skills" class="nav-link"><i class="fa fa-code"></i> Skills</a>
+            <a href="#contact" class="nav-link"><i class="fa fa-envelope"></i> Contact</a>
         </nav>
+
+        <div class="hero">
+            <h1 data-aos="fade-up">AI & ML Portfolio</h1>
+            <p data-aos="fade-up">Building logic, fueling intelligence</p>
+        </div>
     </header>
+
     <main>
-        <section>
-            <h2>About My AI & ML Work</h2>
-            <p>
-                Explore a selection of my projects in Artificial Intelligence and Machine Learning, showcasing skills in data analysis, model development, and deployment.
-            </p>
+        <section id="about">
+            <h2><i class="fa fa-user"></i> About Me</h2>
+            <p>I am passionate about Artificial Intelligence and Machine Learning, and I use tools like Python,
+                TensorFlow, and scikit-learn to build intelligent solutions. I also have full-stack web development
+                skills.</p>
         </section>
-        <section>
-            <h2>Featured Projects</h2>
-            <ul>
-                <li>
-                    <h3>Image Classification with CNNs</h3>
-                    <p>Developed a convolutional neural network to classify images with high accuracy using TensorFlow and Keras.</p>
-                </li>
-                <li>
-                    <h3>Natural Language Processing Chatbot</h3>
-                    <p>Built a chatbot using NLP techniques to understand and respond to user queries in real-time.</p>
-                </li>
-                <li>
-                    <h3>Predictive Analytics for Sales Forecasting</h3>
-                    <p>Implemented machine learning models to predict future sales trends based on historical data.</p>
-                </li>
-            </ul>
+
+        <section id="projects">
+            <h2><i class="fa fa-brain"></i> AI/ML Projects</h2>
+            <div class="projects-list">
+                <article>
+                    <h3>AI Chatbot</h3>
+                    <p>A chatbot powered by NLP and deep learning to simulate conversations.</p>
+                    <ul>
+                        <li><strong>Tech:</strong> Python, TensorFlow, NLTK</li>
+                        <li><strong>Problem:</strong> Automated customer query resolution</li>
+                    </ul>
+                    <a href="#" class="btn"><i class="fa fa-code"></i> GitHub</a>
+                </article>
+                <article>
+                    <h3>Image Classifier</h3>
+                    <p>A CNN-based model that classifies medical X-ray images.</p>
+                    <ul>
+                        <li><strong>Tech:</strong> Keras, OpenCV</li>
+                        <li><strong>Problem:</strong> Early disease detection</li>
+                    </ul>
+                    <a href="#" class="btn"><i class="fa fa-code"></i> GitHub</a>
+                </article>
+                <article>
+                    <h3>Coming Soon</h3>
+                    <p>More AI/ML projects will be added here shortly.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2><i class="fa fa-code"></i> Skills & Tools</h2>
+            <div class="skills-grid">
+                <div><i class="fab fa-python"></i> Python</div>
+                <div><i class="fab fa-js-square"></i> JavaScript</div>
+                <div><i class="fas fa-brain"></i> TensorFlow</div>
+                <div><i class="fas fa-project-diagram"></i> scikit-learn</div>
+                <div><i class="fas fa-network-wired"></i> Keras</div>
+                <div><i class="fas fa-database"></i> MongoDB</div>
+                <div><i class="fab fa-git-alt"></i> Git & GitHub</div>
+                <div><i class="fas fa-cloud"></i> Firebase</div>
+                <div><i class="fas fa-plug"></i> REST APIs</div>
+                <div><i class="fas fa-palette"></i> UI/UX & Canva</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2><i class="fa fa-envelope"></i> Contact Me</h2>
+            <form action="https://formsubmit.co/newmail9472@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn"><i class="fa fa-paper-plane"></i> Send</button>
+            </form>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Prem Prakash | <a href="mailto:newmail9472@gmail.com">newmail9472@gmail.com</a></p>
+        <div class="footer-social">
+            <a href="https://github.com/xyzcode94" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/your-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/your-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
+
+    <!-- Scroll to Top -->
+    <button id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../script/ai-ml.js"></script>
 </body>
+
 </html>

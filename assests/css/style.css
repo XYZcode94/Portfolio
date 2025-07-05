@@ -357,9 +357,11 @@ section a:active {
     opacity: 0;
     transition: opacity 0.3s ease;
     padding: 10px;
+    pointer-events: none;
 }
 .card:hover .image_overlay {
     opacity: 1;
+    pointer-events: auto;
 }
 
 
