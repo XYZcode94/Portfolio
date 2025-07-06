@@ -1,88 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Database Page Head -->
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Database Development | Prem Prakash Portfolio</title>
-    <meta name="title" content="Database Development | Prem Prakash Portfolio" />
-    <meta name="description"
-        content="Explore secure and scalable database development by Prem Prakash – optimized solutions using MySQL, MongoDB, and more." />
-    <meta name="keywords"
-        content="Database Development, SQL, MySQL, MongoDB, NoSQL, Backend, Data Modeling, Prem Prakash Portfolio" />
-    <meta name="author" content="Prem Prakash" />
-    <meta name="robots" content="index, follow" />
+  <title>Database Management | Prem Prakash Portfolio</title>
+  <meta name="title" content="Database Management | Prem Prakash Portfolio" />
+  <meta name="description"
+    content="Explore database management projects and skills by Prem Prakash – secure, scalable data solutions using SQL, MongoDB, Firebase and more." />
+  <meta name="keywords" content="Database Management, SQL, MongoDB, Firebase, Prem Prakash, Portfolio" />
+  <meta name="author" content="Prem Prakash" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://xyzcode94.github.io/Portfolio/assests/pages/database.html" />
-    <meta property="og:title" content="Database Development | Prem Prakash Portfolio" />
-    <meta property="og:description"
-        content="Explore secure and scalable database development by Prem Prakash – optimized solutions using MySQL, MongoDB, and more." />
-    <meta property="og:image" content="https://xyzcode94.github.io/Portfolio/assests/image/database.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xyzcode94.github.io/Portfolio/assests/pages/database.html" />
+  <meta property="og:title" content="Database Management | Prem Prakash Portfolio" />
+  <meta property="og:description"
+    content="Explore database projects by Prem Prakash showcasing scalable, optimized data architectures." />
+  <meta property="og:image" content="https://xyzcode94.github.io/Portfolio/assests/image/database.jpg" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://xyzcode94.github.io/Portfolio/assests/pages/database.html" />
-    <meta name="twitter:title" content="Database Development | Prem Prakash Portfolio" />
-    <meta name="twitter:description"
-        content="Explore secure and scalable database development by Prem Prakash – optimized solutions using MySQL, MongoDB, and more." />
-    <meta name="twitter:image" content="https://xyzcode94.github.io/Portfolio/assests/image/database.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Database Management | Prem Prakash Portfolio" />
+  <meta name="twitter:description"
+    content="Explore database projects by Prem Prakash showcasing scalable, optimized data architectures." />
+  <meta name="twitter:image" content="https://xyzcode94.github.io/Portfolio/assests/image/database.jpg" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://xyzcode94.github.io/Portfolio/assests/pages/database.html" />
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" type="image/png" href="../image/favicon.png" />
-    <link rel="stylesheet" href="../css/database.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="canonical" href="https://xyzcode94.github.io/Portfolio/assests/pages/database.html" />
+  <link rel="icon" type="image/png" href="../image/favicon.png" />
+  <link rel="stylesheet" href="../css/database.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-    <header>
-        <h1>Database Management</h1>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="database-management.html" class="active">Database Management</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Overview</h2>
-            <p>
-                Database management involves the use of software to store, organize, and manage data efficiently. It
-                ensures data integrity, security, and accessibility for various applications.
-            </p>
-        </section>
-        <section>
-            <h2>Key Features</h2>
-            <ul>
-                <li>Data modeling and design</li>
-                <li>Efficient data storage and retrieval</li>
-                <li>Backup and recovery solutions</li>
-                <li>Security and access control</li>
-                <li>Performance optimization</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Popular Database Management Systems</h2>
-            <ul>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-                <li>MongoDB</li>
-                <li>Microsoft SQL Server</li>
-                <li>Oracle Database</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+  <!-- Hamburger Button -->
+  <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <header>
+    <nav>
+      <a href="#" class="nav-link"><i class="fa fa-home"></i> Home</a>
+      <a href="#about" class="nav-link"><i class="fa fa-database"></i> About DB</a>
+      <a href="#projects" class="nav-link"><i class="fa fa-folder-open"></i> Projects</a>
+      <a href="#skills" class="nav-link"><i class="fa fa-tools"></i> Skills</a>
+      <a href="#contact" class="nav-link"><i class="fa fa-envelope"></i> Contact</a>
+    </nav>
+
+    <div class="hero">
+      <h1 data-aos="fade-up">Database Management</h1>
+      <p data-aos="fade-up">Designing fast, secure, and scalable data solutions</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2><i class="fa fa-database"></i> About My Database Expertise</h2>
+      <p>
+        I specialize in designing efficient and secure databases that power web and mobile applications.
+        From relational systems like MySQL and PostgreSQL to NoSQL databases like MongoDB and Firebase,
+        I structure and manage data for performance, security, and scalability.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2><i class="fa fa-folder-open"></i> Database Projects</h2>
+      <div class="projects-list">
+        <article>
+          <h3>Student Management System</h3>
+          <p>Full-stack system with user roles, login, and database-powered backend.</p>
+          <ul>
+            <li><strong>Tech:</strong> MySQL, PHP, HTML/CSS</li>
+            <li><strong>Focus:</strong> CRUD operations, security, relations</li>
+          </ul>
+          <a href="#" class="btn"><i class="fa fa-code"></i> GitHub</a>
+        </article>
+
+        <article>
+          <h3>Realtime Chat with Firebase</h3>
+          <p>A scalable chat system using Firebase Realtime DB and authentication.</p>
+          <ul>
+            <li><strong>Tech:</strong> Firebase, JavaScript</li>
+            <li><strong>Focus:</strong> Realtime sync, security rules</li>
+          </ul>
+          <a href="#" class="btn"><i class="fa fa-code"></i> GitHub</a>
+        </article>
+
+        <article>
+          <h3>MongoDB Dashboard</h3>
+          <p>Visual dashboard to query and manage NoSQL collections.</p>
+          <ul>
+            <li><strong>Tech:</strong> MongoDB, Node.js, Express</li>
+            <li><strong>Focus:</strong> Aggregation, visualization, API</li>
+          </ul>
+          <a href="#" class="btn"><i class="fa fa-code"></i> GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2><i class="fa fa-tools"></i> Skills & Tools</h2>
+      <div class="skills-grid">
+        <div><i class="fas fa-database"></i> MySQL</div>
+        <div><i class="fas fa-database"></i> MongoDB</div>
+        <div><i class="fas fa-fire"></i> Firebase</div>
+        <div><i class="fas fa-server"></i> PostgreSQL</div>
+        <div><i class="fas fa-code-branch"></i> Git</div>
+        <div><i class="fas fa-network-wired"></i> APIs</div>
+        <div><i class="fas fa-cogs"></i> SQL Joins & Indexing</div>
+        <div><i class="fas fa-lock"></i> Data Security</div>
+        <div><i class="fas fa-sync"></i> Backup & Recovery</div>
+        <div><i class="fas fa-chart-bar"></i> Data Analytics</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fa fa-envelope"></i> Contact Me</h2>
+      <p>Want to collaborate on a database-driven project? Let's connect!</p>
+      <form action="https://formsubmit.co/newmail9472@gmail.com" method="POST" class="contact-form" data-aos="fade-up">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <input type="hidden" name="_next"
+          value="https://xyzcode94.github.io/Portfolio/assests/pages/thankyou.html">
+        <input type="hidden" name="_subject" value="Database Contact Form Message" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        <button type="submit" class="btn"><i class="fa fa-paper-plane"></i> Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Prem Prakash | <a href="mailto:newmail9472@gmail.com">newmail9472@gmail.com</a></p>
+    <div class="footer-social">
+      <a href="https://github.com/xyzcode94" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/your-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/your-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <button id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="../script/ai-ml.js"></script> <!-- Same script file reused -->
 </body>
 
 </html>
