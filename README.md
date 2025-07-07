@@ -87,6 +87,9 @@ graph TB
 
 ---
 
+![My DP](https://raw.githubusercontent.com/xyzcode94/portfolio/figure.jpg)
+
+---
 ## 🔗 Live Demo
 
 You can view the live deployed version here:  
