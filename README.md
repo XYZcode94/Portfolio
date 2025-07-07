@@ -1,6 +1,8 @@
 # Portfolio
 About my  journey of life | Achievement of my life
+## 📊 Portfolio Project Structure
 
+```mermaid
 flowchart TD
     %% Main Layers
     U["User Browser"]:::user
@@ -117,8 +119,8 @@ flowchart TD
     classDef image fill:#FFEFD5,stroke:#333,stroke-width:1px
     classDef docs fill:#D3D3D3,stroke:#333,stroke-width:1px
     classDef config fill:#F5DEB3,stroke:#333,stroke-width:1px
+```
 
-    ---
 
 
 Directory structure:
