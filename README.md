@@ -67,3 +67,34 @@ flowchart TD
     classDef client fill:#ffffff,stroke:#333,stroke-width:1px
     classDef external fill:#e0e0e0,stroke:#333,stroke-width:1px
 ```
+
+
+Directory structure:
+└── xyzcode94-portfolio/
+    ├── README.md
+    ├── googleb44328186f7c82f4.html
+    ├── index.html
+    ├── robots.txt
+    ├── sitemap.xml
+    └── assests/
+        ├── css/
+        │   ├── ai&ml.css
+        │   ├── database.css
+        │   ├── mobile-dev.css
+        │   ├── style.css
+        │   ├── thankyou.css
+        │   ├── web-dev.css
+        │   └── workpage.css
+        ├── pages/
+        │   ├── ai-ml.html
+        │   ├── database-management.html
+        │   ├── mobile-development.html
+        │   ├── thankyou.html
+        │   ├── ui-ux-design.html
+        │   ├── video-editing.html
+        │   ├── web-development.html
+        │   └── workpage.html
+        └── script/
+            ├── ai-ml.js
+            ├── script.js
+            └── web-dev.js
