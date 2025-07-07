@@ -97,8 +97,8 @@ You can view the live deployed version here:
 ## 📬 Contact
 
 Want to collaborate or hire me?  
-📧 Email: `yourmail@example.com`  
-🔗 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+📧 Email: `newmail9472@gmail.com`  
+🔗 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/prem-prakash-2bb94b358)
 
 ---
 
