@@ -38,8 +38,11 @@ xyzcode94-portfolio/
 ```
 
 ---
+<details>
+<summary>📊 Visual File Map (Mermaid Interactive)</summary>
 
-## 📊 Visual File Map 
+```mermaid
+<!-- your full Mermaid code here -->
 
 flowchart TB
     %% Top Level
