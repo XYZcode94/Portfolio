@@ -39,9 +39,7 @@ xyzcode94-portfolio/
 
 ---
 
-## 📊 Visual File Map (Vertical View)
-
-%% 📊 Visual File Map (Strict Vertical View)
+## 📊 Visual File Map 
 
 flowchart TB
     %% Top Level
