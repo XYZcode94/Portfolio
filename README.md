@@ -88,16 +88,10 @@ graph TB
 ---
 
 ![code](https://raw.githubusercontent.com/xyzcode94/portfolio/main/figure.png)
-<html>
-    <head>
-        <title>figure</title>
-    </head>
-    <body>
-        <p align="center">
-          <img src="(https://raw.githubusercontent.com/xyzcode94/portfolio/main/figure.png" alt="My DP" width="200" />
-        </p>
-    </body>
-</html>
+
+<p align="center">
+    <img src="(https://raw.githubusercontent.com/xyzcode94/portfolio/main/figure.png" alt="My DP" width="200" />
+</p>
 
 ---
 
