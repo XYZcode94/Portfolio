@@ -41,16 +41,16 @@ xyzcode94-portfolio/
 
 ## 📊 Visual File Map (Vertical View)
 
-```mermaid
+%% 📊 Visual File Map (Strict Vertical View)
+
 flowchart TB
-    %% Main Layers
+    %% Top Level
     U["User Browser"]:::user
     H["Static Hosting / CDN"]:::hosting
-
     U -->|requests static assets| H
 
-    %% HTML Files
-    subgraph "HTML Files"
+    %% Layer: HTML
+    subgraph htmlLayer["HTML Files"]
         direction TB
         index["index.html"]:::frontend
         pagesDir["pages/"]:::frontend
@@ -65,8 +65,8 @@ flowchart TB
         pagesDir --> thank["thankyou.html"]:::frontend
     end
 
-    %% CSS Files
-    subgraph "Stylesheets (assets/css)"
+    %% Layer: Stylesheets
+    subgraph cssLayer["Stylesheets (assets/css)"]
         direction TB
         cssDir["assets/css/"]:::css
         cssDir --> aiCss["ai&ml.css"]:::css
@@ -78,8 +78,8 @@ flowchart TB
         cssDir --> workCss["workpage.css"]:::css
     end
 
-    %% JS Files
-    subgraph "Scripts (assets/script)"
+    %% Layer: Scripts
+    subgraph jsLayer["Scripts (assets/script)"]
         direction TB
         jsDir["assets/script/"]:::script
         jsDir --> aiJs["ai-ml.js"]:::script
@@ -87,28 +87,28 @@ flowchart TB
         jsDir --> mainJs["script.js"]:::script
     end
 
-    %% Images
-    subgraph "Images (assets/image)"
+    %% Layer: Images
+    subgraph imgLayer["Images (assets/image)"]
         direction TB
         imgDir["assets/image/"]:::image
     end
 
-    %% Documents
-    subgraph "Documents (assets/docs)"
+    %% Layer: Documents
+    subgraph docsLayer["Documents (assets/docs)"]
         direction TB
         docsDir["assets/docs/"]:::docs
         docsDir --> cv["CV.pdf"]:::docs
     end
 
-    %% Configuration Files
-    subgraph "Configuration"
+    %% Layer: Configuration
+    subgraph cfgLayer["Configuration"]
         direction TB
         robots["robots.txt"]:::config
         sitemap["sitemap.xml"]:::config
         google["googleb44328186f7c82f4.html"]:::config
     end
 
-    %% Connections from Hosting
+    %% Connections from Hosting to all content layers
     H --> index
     H --> pagesDir
     H --> cssDir
@@ -128,7 +128,7 @@ flowchart TB
     classDef image fill:#FFEFD5,stroke:#333,stroke-width:1px
     classDef docs fill:#D3D3D3,stroke:#333,stroke-width:1px
     classDef config fill:#F5DEB3,stroke:#333,stroke-width:1px
-```
+---
 
 
 ---
