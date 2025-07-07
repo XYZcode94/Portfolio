@@ -118,6 +118,8 @@ flowchart TD
     classDef docs fill:#D3D3D3,stroke:#333,stroke-width:1px
     classDef config fill:#F5DEB3,stroke:#333,stroke-width:1px
 
+    ---
+
 
 Directory structure:
 └── xyzcode94-portfolio/
