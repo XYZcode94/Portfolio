@@ -42,7 +42,7 @@ xyzcode94-portfolio/
 ## 📊 Visual File Map (Mermaid Diagram)
 
 ```mermaid
-flowchart TD
+flowchart TB
     %% Main Layers
     U["User Browser"]:::user
     H["Static Hosting / CDN"]:::hosting
