@@ -41,7 +41,7 @@ xyzcode94-portfolio/
 
 ---
 
-## 📊 Portfolio Structure (Simplified Vertical View)
+## 📊 Portfolio Structure
 
 ```mermaid
 graph TB
