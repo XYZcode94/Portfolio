@@ -87,7 +87,7 @@ graph TB
 
 ---
 
-![My DP](https://raw.githubusercontent.com/xyzcode94/portfolio/figure.jpg)
+![code](https://raw.githubusercontent.com/xyzcode94/portfolio/figure.png)
 
 ---
 ## 🔗 Live Demo
