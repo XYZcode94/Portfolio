@@ -1,7 +1,7 @@
 # 🌐 Prem Prakash Portfolio
 
 Welcome to my developer portfolio!  
-This project is built using **HTML**, **CSS**, and **JavaScript** to showcase my skills and projects in various domains including AI/ML, Web Development, Mobile Applications, UI/UX Design, and more.
+This project is built using **HTML**, **CSS**, and **JavaScript** to showcase my skills and projects in various domains like AI/ML, Web Development, Mobile Apps, UI/UX, and more.
 
 ---
 
@@ -44,9 +44,6 @@ xyzcode94-portfolio/
 ## 📊 Portfolio Structure (Simplified Vertical View)
 
 ```mermaid
-## 📊 Portfolio Structure (Simplified Vertical View)
-
-```mermaid
 graph TB
     U["User Browser"]
     H["Static Hosting / CDN"]
@@ -86,25 +83,23 @@ graph TB
     cfg --> robots["robots.txt"]
     cfg --> sitemap["sitemap.xml"]
     cfg --> google["googleb44328186f7c82f4.html"]
-
 ```
-
-> ⚠️ GitHub auto-renders Mermaid diagrams. If this doesn't appear properly, test it at [https://mermaid.live](https://mermaid.live)
 
 ---
 
 ## 🔗 Live Demo
 
-You can view the live deployed version of this portfolio at:  
+You can view the live deployed version here:  
 👉 [https://xyzcode94.github.io/portfolio/](https://xyzcode94.github.io/portfolio/)
 
 ---
 
 ## 📬 Contact
 
-If you'd like to collaborate, feel free to reach out via [LinkedIn](https://linkedin.com/in/your-profile) or email me at: `yourmail@example.com`
+Want to collaborate or hire me?  
+📧 Email: `yourmail@example.com`  
+🔗 LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
 
 ---
 
-> 💡 This project is a living portfolio. Stay tuned for updates on animations, transitions, dark mode support, and more.
-
+> 💡 This portfolio is actively updated. Future additions include dark mode, animations, project filtering, and interactive charts.
