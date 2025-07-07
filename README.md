@@ -98,7 +98,9 @@ graph TB
         </p>
     </body>
 </html>
+
 ---
+
 ## 🔗 Live Demo
 
 You can view the live deployed version here:  
