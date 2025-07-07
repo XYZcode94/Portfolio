@@ -42,7 +42,6 @@ xyzcode94-portfolio/
 <summary>📊 Visual File Map (Mermaid Interactive)</summary>
 
 ```mermaid
-<!-- your full Mermaid code here -->
 
 flowchart TB
     %% Top Level
