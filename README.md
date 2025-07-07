@@ -44,14 +44,17 @@ xyzcode94-portfolio/
 ## 📊 Portfolio Structure (Simplified Vertical View)
 
 ```mermaid
+## 📊 Portfolio Structure (Simplified Vertical View)
+
+```mermaid
 graph TB
-    U["🌐 User Browser"]
-    H["📦 Static Hosting / CDN"]
+    U["User Browser"]
+    H["Static Hosting / CDN"]
 
     U --> H
 
-    H --> index["📄 index.html"]
-    H --> pages["📁 pages/"]
+    H --> index["index.html"]
+    H --> pages["assets/pages/"]
     pages --> ai["ai-ml.html"]
     pages --> db["database-management.html"]
     pages --> mobile["mobile-development.html"]
@@ -61,28 +64,29 @@ graph TB
     pages --> work["workpage.html"]
     pages --> thank["thankyou.html"]
 
-    H --> css["🎨 assets/css/"]
+    H --> css["assets/css/"]
     css --> aiCss["ai&ml.css"]
     css --> dbCss["database.css"]
     css --> mobCss["mobile-dev.css"]
-    css --> style["style.css"]
+    css --> styleCss["style.css"]
     css --> thankCss["thankyou.css"]
     css --> webCss["web-dev.css"]
     css --> workCss["workpage.css"]
 
-    H --> js["📜 assets/script/"]
+    H --> js["assets/script/"]
     js --> aiJs["ai-ml.js"]
     js --> webJs["web-dev.js"]
     js --> mainJs["script.js"]
 
-    H --> img["🖼️ assets/image/"]
-    H --> docs["📄 assets/docs/"]
+    H --> img["assets/image/"]
+    H --> docs["assets/docs/"]
     docs --> cv["CV.pdf"]
 
-    H --> cfg["⚙️ Config"]
+    H --> cfg["Configuration"]
     cfg --> robots["robots.txt"]
     cfg --> sitemap["sitemap.xml"]
     cfg --> google["googleb44328186f7c82f4.html"]
+
 ```
 
 > ⚠️ GitHub auto-renders Mermaid diagrams. If this doesn't appear properly, test it at [https://mermaid.live](https://mermaid.live)
