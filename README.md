@@ -39,7 +39,7 @@ xyzcode94-portfolio/
 
 ---
 
-## 📊 Visual File Map (Mermaid Diagram)
+## 📊 Visual File Map (Vertical View)
 
 ```mermaid
 flowchart TB
@@ -50,7 +50,7 @@ flowchart TB
     U -->|requests static assets| H
 
     %% HTML Files
-    subgraph "HTML Files" 
+    subgraph "HTML Files"
         direction TB
         index["index.html"]:::frontend
         pagesDir["pages/"]:::frontend
@@ -66,7 +66,7 @@ flowchart TB
     end
 
     %% CSS Files
-    subgraph "Stylesheets (assets/css)" 
+    subgraph "Stylesheets (assets/css)"
         direction TB
         cssDir["assets/css/"]:::css
         cssDir --> aiCss["ai&ml.css"]:::css
@@ -88,7 +88,7 @@ flowchart TB
     end
 
     %% Images
-    subgraph "Images (assets/image)" 
+    subgraph "Images (assets/image)"
         direction TB
         imgDir["assets/image/"]:::image
     end
@@ -129,6 +129,7 @@ flowchart TB
     classDef docs fill:#D3D3D3,stroke:#333,stroke-width:1px
     classDef config fill:#F5DEB3,stroke:#333,stroke-width:1px
 ```
+
 
 ---
 
