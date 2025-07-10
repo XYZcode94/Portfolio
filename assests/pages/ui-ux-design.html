@@ -35,50 +35,112 @@
 
     <!-- Favicon & Styles -->
     <link rel="icon" type="image/png" href="../image/favicon.png" />
-    <link rel="stylesheet" href="../css/ui-ux.css" />
+    <link rel="stylesheet" href="../css/ui_ux.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
+    <!-- Hamburger Button -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
+
     <header>
         <nav>
-            <a href="../../index.html">Home</a>
-            <a href="ui-ux-design.html" class="active">UI/UX Design</a>
-            <a href="web-development.html">Web Development</a>
-            <a href="contact.html">Contact</a>
+            <a href="../../index.html"><i class="fa fa-home"></i> Home</a>
+            <a href="#about"><i class="fa fa-user"></i> About</a>
+            <a href="#projects"><i class="fa fa-palette"></i> Designs</a>
+            <a href="#tools"><i class="fa fa-tools"></i> Tools</a>
+            <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
         </nav>
-        <h1>UI/UX Design</h1>
+        <div class="hero">
+            <h1>UI/UX Design</h1>
+            <p>Designing delightful experiences through wireframes & visuals</p>
+        </div>
     </header>
+
     <main>
-        <section>
-            <h2>About My UI/UX Design Work</h2>
-            <p>
-                I specialize in creating intuitive and engaging user interfaces with a focus on user experience. My
-                design process involves research, wireframing, prototyping, and user testing to ensure optimal usability
-                and aesthetics.
-            </p>
+        <section id="about">
+            <h2><i class="fa fa-user"></i> About Me</h2>
+            <p>As a UI/UX enthusiast, I blend creativity with usability. My design approach focuses on empathy, user
+                journey mapping, and intuitive interfaces that solve real problems.</p>
         </section>
-        <section>
-            <h2>Featured Projects</h2>
-            <div class="projects">
-                <article class="project-card">
-                    <img src="../images/project1.png" alt="Project 1 Screenshot">
-                    <h3>Project Name 1</h3>
-                    <p>Brief description of the UI/UX design project, highlighting key features and design solutions.
-                    </p>
+
+        <section id="projects">
+            <h2><i class="fa fa-palette"></i> Selected Designs</h2>
+            <div class="projects-list">
+                <article>
+                    <h3>Portfolio Website UI</h3>
+                    <p>Clean and modern layout designed with usability in mind.</p>
+                    <ul>
+                        <li><strong>Tool:</strong> Figma</li>
+                        <li><strong>Deliverable:</strong> Responsive Web Prototype</li>
+                    </ul>
+                    <a href="#" class="btn"><i class="fa fa-eye"></i> View</a>
                 </article>
-                <article class="project-card">
-                    <img src="../images/project2.png" alt="Project 2 Screenshot">
-                    <h3>Project Name 2</h3>
-                    <p>Brief description of another UI/UX design project, focusing on user-centered design approach.</p>
+                <article>
+                    <h3>Mobile App Wireframe</h3>
+                    <p>Early-stage flow & low-fidelity wireframes for a fitness app.</p>
+                    <ul>
+                        <li><strong>Tool:</strong> Adobe XD</li>
+                        <li><strong>Focus:</strong> User onboarding + dashboard</li>
+                    </ul>
+                    <a href="#" class="btn"><i class="fa fa-eye"></i> Preview</a>
                 </article>
-                <!-- Add more project cards as needed -->
+                <article>
+                    <h3>Coming Soon</h3>
+                    <p>More UI/UX case studies in progress.</p>
+                </article>
             </div>
         </section>
+
+        <section id="tools">
+            <h2><i class="fa fa-tools"></i> Tools & Skills</h2>
+            <div class="skills-grid">
+                <div><i class="fab fa-figma"></i> Figma</div>
+                <div><i class="fas fa-vector-square"></i> Adobe XD</div>
+                <div><i class="fas fa-draw-polygon"></i> Wireframing</div>
+                <div><i class="fas fa-users"></i> User Research</div>
+                <div><i class="fas fa-cubes"></i> UI Components</div>
+                <div><i class="fas fa-chart-line"></i> Usability Testing</div>
+                <div><i class="fas fa-code"></i> HTML/CSS Integration</div>
+                <div><i class="fas fa-notes-medical"></i> Accessibility</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2><i class="fa fa-envelope"></i> Contact</h2>
+            <p>Let’s collaborate on beautiful and functional interfaces.</p>
+            <form action="https://formsubmit.co/newmail9472@gmail.com" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="hidden" name="_next"
+                    value="https://xyzcode94.github.io/Portfolio/assests/pages/thankyou.html" />
+                <button type="submit" class="btn"><i class="fa fa-paper-plane"></i> Send</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Prem Prakash | <a href="mailto:newmail9472@gmail.com">newmail9472@gmail.com</a></p>
+        <div class="footer-social">
+            <a href="https://github.com/xyzcode94" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/your-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/your-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
+
+    <!-- Scroll to Top -->
+    <button id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+   <scrip src="../srcipt/ai-ml.js"></script>
 </body>
 
 </html>

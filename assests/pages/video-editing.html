@@ -36,44 +36,141 @@
 
     <!-- Favicon & Styles -->
     <link rel="icon" type="image/png" href="../image/favicon.png" />
-    <link rel="stylesheet" href="../css/video-editing.css" />
+    <link rel="stylesheet" href="../css/video.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
+    <!-- Hamburger Button -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Header Section -->
     <header>
-        <h1>Video Editing Portfolio</h1>
         <nav>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="video-editing.html" class="active">Video Editing</a></li>
-                <li><a href="graphic-design.html">Graphic Design</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="../../index.html" class="nav-link"><i class="fa fa-home"></i> Home</a>
+            <a href="#about" class="nav-link"><i class="fa fa-user"></i> About</a>
+            <a href="#projects" class="nav-link"><i class="fa fa-film"></i> Projects</a>
+            <a href="#tools" class="nav-link"><i class="fa fa-tools"></i> Tools</a>
+            <a href="#contact" class="nav-link"><i class="fa fa-envelope"></i> Contact</a>
         </nav>
+        <div class="hero">
+            <h1>Video Editing Portfolio</h1>
+            <p>Crafting visuals that tell stories with style & impact</p>
+        </div>
     </header>
+
     <main>
-        <section>
-            <h2>My Video Editing Work</h2>
-            <p>Welcome to my video editing portfolio. Here you can find some of my recent projects showcasing my skills
-                in video editing, color grading, and motion graphics.</p>
+        <section id="about">
+            <h2><i class="fa fa-user"></i> About My Editing Skills</h2>
+            <p>I specialize in post-production editing, motion graphics, and visual storytelling. From YouTube content
+                to short films, I bring ideas to life with smooth cuts, clean transitions, and color-graded perfection.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2><i class="fa fa-film"></i> Projects</h2>
+            <div class="projects-list">
+                <article>
+                    <h3>Travel Vlog</h3>
+                    <p>Stylized and cinematic travel experience with dynamic cuts and music sync.</p>
+                    <ul>
+                        <li><strong>Tools:</strong> Premiere Pro, After Effects</li>
+                        <li><strong>Style:</strong> Cinematic, B-Roll Transitions</li>
+                    </ul>
+                    <a href="#" class="btn"><i class="fa fa-eye"></i> View</a>
+                </article>
+                <article>
+                    <h3>Music Video</h3>
+                    <p>High-paced visuals with beats, overlays, and lighting effects.</p>
+                    <ul>
+                        <li><strong>Tools:</strong> DaVinci Resolve, AE</li>
+                        <li><strong>Features:</strong> Color grading, Sound sync</li>
+                    </ul>
+                    <a href="#" class="btn"><i class="fa fa-eye"></i> Coming Soon</a>
+                </article>
+                <article>
+                    <h3>Product Promo</h3>
+                    <p>Clean and modern motion graphics for product advertising.</p>
+                    <ul>
+                        <li><strong>Tools:</strong> After Effects, Photoshop</li>
+                        <li><strong>Effect:</strong> Typography Animation</li>
+                    </ul>
+                    <a href="#" class="btn"><i class="fa fa-eye"></i> Coming Soon</a>
+                </article>
+            </div>
+        </section>
+        <section id="video-gallery">
+            <h2><i class="fa fa-video"></i> Video Projects</h2>
             <div class="video-gallery">
-                <!-- Example video item -->
                 <div class="video-item">
-                    <video controls width="320">
+                    <video controls width="100%">
                         <source src="../videos/sample1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <h3>Project Title 1</h3>
                     <p>Short description of the project and techniques used.</p>
                 </div>
-                <!-- Add more video items as needed -->
+                <div class="video-item">
+                    <video controls width="100%">
+                        <source src="../videos/sample2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Project Title 2</h3>
+                    <p>Edited with Adobe Premiere and After Effects to deliver cinematic visuals.</p>
+                </div>
+                <!-- Add more video-item blocks as needed -->
             </div>
         </section>
+
+
+        <section id="tools">
+            <h2><i class="fa fa-tools"></i> Tools I Use</h2>
+            <div class="skills-grid">
+                <div><i class="fas fa-video"></i> Premiere Pro</div>
+                <div><i class="fas fa-magic"></i> After Effects</div>
+                <div><i class="fas fa-adjust"></i> DaVinci Resolve</div>
+                <div><i class="fas fa-image"></i> Photoshop</div>
+                <div><i class="fas fa-music"></i> Audition</div>
+                <div><i class="fas fa-layer-group"></i> Canva</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2><i class="fa fa-envelope"></i> Contact Me</h2>
+            <p>Want to collaborate on a video project or need editing help? Reach out!</p>
+            <form class="contact-form" action="https://formsubmit.co/newmail9472@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <input type="hidden" name="_next"
+                    value="https://xyzcode94.github.io/Portfolio/assests/pages/thankyou.html">
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit" class="btn"><i class="fa fa-paper-plane"></i> Send</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Prem Prakash | <a href="mailto:newmail9472@gmail.com">newmail9472@gmail.com</a></p>
+        <div class="footer-social">
+            <a href="https://github.com/xyzcode94" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/your-twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/your-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
+
+    <!-- Scroll to Top -->
+    <button id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../script/ai-ml.js"></script>
+
 </body>
 
 </html>

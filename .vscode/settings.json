@@ -3,5 +3,6 @@
         "autoresponse",
         "myspamtrap",
         "urlset"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

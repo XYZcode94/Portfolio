@@ -174,7 +174,7 @@ button.btn {
     transition: 0.2s ease-in-out;
 }
 
-button.btn:hover{
+button.btn:hover {
     transform: scale(1.1);
 }
 
@@ -250,7 +250,7 @@ footer {
         display: block;
     }
 
-    .hamburger.hidden {
+    .hidden{
         opacity: 0;
         pointer-events: none;
     }
