@@ -205,6 +205,10 @@ footer {
     transition: opacity 0.3s ease;
 }
 
+#backToTop:hover {
+  background-color: var(--dark);
+}
+
 .btn {
     display: inline-block;
     margin-top: 0.5rem;
@@ -276,6 +280,29 @@ a {
         font-size: 0.85rem;
     }
 
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: #F7F7F2;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        padding: 1rem;
+        z-index: 999;
+    }
+
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    nav a {
+        color: #21897E;
+    }
+
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
@@ -306,6 +333,28 @@ a {
         display: block;
     }
 
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: #F7F7F2;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        padding: 1rem;
+        z-index: 999;
+    }
+
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    nav a {
+        color: #21897E;
+    }
+
 
     .hero p {
         font-size: 1rem;
@@ -331,9 +380,31 @@ a {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
 
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: #F7F7F2;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        padding: 1rem;
+        z-index: 999;
+    }
+
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
 
     .hamburger {
         display: block;
+    }
+
+
+    nav a {
+        color: #21897E;
     }
 
     .projects-list,
@@ -388,4 +459,10 @@ a {
     .video-gallery {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
+}
+
+
+
+nav.show {
+    display: flex;
 }
