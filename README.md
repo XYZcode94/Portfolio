@@ -7,39 +7,50 @@ This project is built using **HTML**, **CSS**, and **JavaScript** to showcase my
 
 ## 📁 Directory Structure
 
-Directory structure:
+- 🖥️ Web Development  
+- 🤖 AI & Machine Learning  
+- 🎨 UI/UX Design  
+- 📱 Mobile Development  
+- 🧠 Database Management  
+- 🎬 Video Editing
 
+---
 
+## 📁 Folder Structure
+
+```text
 xyzcode94-portfolio/
-├── README.md
-├── googleb44328186f7c82f4.html
-├── index.html
-├── robots.txt
-├── sitemap.xml
-└── assests/
-    ├── css/
-    │   ├── ai&ml.css
-    │   ├── database.css
-    │   ├── mobile-dev.css
-    │   ├── style.css
-    │   ├── thankyou.css
-    │   ├── ui_ux.css
-    │   ├── video.css
-    │   ├── web-dev.css
-    │   └── workpage.css
-    ├── pages/
-    │   ├── ai-ml.html
-    │   ├── database-management.html
-    │   ├── mobile-development.html
-    │   ├── thankyou.html
-    │   ├── ui-ux-design.html
-    │   ├── video-editing.html
-    │   ├── web-development.html
-    │   └── workpage.html
-    └── script/
-        ├── ai-ml.js
-        ├── script.js
-        └── web-dev.js
+├── 📄 README.md                        # Project documentation
+├── 📄 googleb44328186f7c82f4.html     # Google site verification
+├── 📄 index.html                      # Main landing page
+├── 📄 robots.txt                      # SEO robot rules
+├── 📄 sitemap.xml                     # Sitemap for search engines
+└── 📂 assests/
+    ├── 📂 css/                        # Stylesheets
+    │   ├── 🎨 ai&ml.css
+    │   ├── 🎨 database.css
+    │   ├── 🎨 mobile-dev.css
+    │   ├── 🎨 style.css
+    │   ├── 🎨 thankyou.css
+    │   ├── 🎨 ui_ux.css
+    │   ├── 🎨 video.css
+    │   ├── 🎨 web-dev.css
+    │   └── 🎨 workpage.css
+    ├── 📂 pages/                      # HTML pages for each section
+    │   ├── 🧠 ai-ml.html
+    │   ├── 🗄️ database-management.html
+    │   ├── 📱 mobile-development.html
+    │   ├── 🙏 thankyou.html
+    │   ├── 🎨 ui-ux-design.html
+    │   ├── 🎬 video-editing.html
+    │   ├── 🌐 web-development.html
+    │   └── 🛠️ workpage.html
+    └── 📂 script/                    # JavaScript files
+        ├── ⚙️ ai-ml.js
+        ├── ⚙️ script.js
+        └── ⚙️ web-dev.js
+```
+
 
 ---
 
