@@ -104,7 +104,7 @@ graph TD
 ## 🔗 Live Demo
 
 You can view the live deployed version here:  
-👉 [https://xyzcode94.github.io/portfolio/](https://xyzcode94.github.io/portfolio/)
+👉 [https://xyzcode94.github.io/portfolio/](https://xyzcode94.github.io/Portfolio/)
 
 ---
 
