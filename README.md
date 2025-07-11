@@ -99,12 +99,6 @@ graph TD
   cfg --> sitemap[sitemap.xml]
   cfg --> google[google-verification.html]
 ```
-
-
----
-
-![code]()
-
 ---
 
 ## 🔗 Live Demo
