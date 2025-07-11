@@ -7,7 +7,44 @@ This project is built using **HTML**, **CSS**, and **JavaScript** to showcase my
 
 ## 📁 Directory Structure
 
+Directory structure:
+
+
+└── xyzcode94-portfolio/
+    ├── README.md
+    ├── googleb44328186f7c82f4.html
+    ├── index.html
+    ├── robots.txt
+    ├── sitemap.xml
+    └── assests/
+        ├── css/
+        │   ├── ai&ml.css
+        │   ├── database.css
+        │   ├── mobile-dev.css
+        │   ├── style.css
+        │   ├── thankyou.css
+        │   ├── ui_ux.css
+        │   ├── video.css
+        │   ├── web-dev.css
+        │   └── workpage.css
+        ├── pages/
+        │   ├── ai-ml.html
+        │   ├── database-management.html
+        │   ├── mobile-development.html
+        │   ├── thankyou.html
+        │   ├── ui-ux-design.html
+        │   ├── video-editing.html
+        │   ├── web-development.html
+        │   └── workpage.html
+        └── script/
+            ├── ai-ml.js
+            ├── script.js
+            └── web-dev.js
+
+
+
 ## 📊 Portfolio Structure
+
 
 ```mermaid
 graph TD
@@ -50,7 +87,7 @@ graph TD
   cfg --> robots[robots.txt]
   cfg --> sitemap[sitemap.xml]
   cfg --> google[google-verification.html]
-
+```
 
 ---
 
