@@ -18,7 +18,7 @@
 } */
 
 header {
-    padding: 20px 0;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -501,7 +501,7 @@ section a:active {
 
 .contact form button {
     padding: 10px 20px;
-    border: 1px solid #007bff;
+    border: 1px solid #000000;
     color: #000;
     border-radius: 5px;
     cursor: pointer;
@@ -511,7 +511,7 @@ section a:active {
 }
 
 .contact form button:hover {
-    background: #007bff;
+    background: #76B900;
     color: #fff;
 }
 
@@ -522,17 +522,17 @@ section a:active {
 
 footer {
     text-align: center;
-    color: #000;
+    color: #ffffff;
     position: relative;
     border-top: 1px solid #ccc;
     border-top-style: double;
-    background: #ffffff;
-    padding: 100px;
+    background: #000000;
+    padding: 20px;
 }
 
 footer p {
     font-size: 14px;
-    color: #000;
+    color: #ffffff;
 }
 
 .social-icons {
@@ -544,13 +544,13 @@ footer p {
 
 .social-icons a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     margin: 0 10px;
     transition: color 0.2s, transform 0.2s;
 }
 
 .social-icons a:hover {
-    color: #0084ff;
+    color: #40f60e;
     transform: scale(1.2) rotate(-8deg);
 }
 
