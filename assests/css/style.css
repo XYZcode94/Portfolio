@@ -13,9 +13,9 @@
     margin: 0 8%;
 }
 
-body {
+/* body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
+} */
 
 header {
     padding: 20px 0;
@@ -29,9 +29,18 @@ header {
 }
 
 header.scrolled {
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
 }
 
+.colour-effect{
+    color: #fff ;
+}
+
+#logo-text{
+    text-decoration: none; 
+    color:#19cb49;
+
+}
 
 .nav-bar {
     display: flex;
@@ -91,7 +100,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f91212;
+    color: #007bff;
 }
 
 nav ul li a.active {
@@ -114,7 +123,7 @@ section {
 .hero-content {
     margin-top: 50px;
     max-width: 800px;
-    color: #fff;
+    color: #000000;
 }
 
 section h1 {
@@ -136,21 +145,17 @@ section p {
 section a {
     display: inline-block;
     padding: 10px 20px;
-    background: #fff;
-    color: #000000;
+    background: #000000;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-section a {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    color: #000;
-    background: #fff;
     transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 15px;
+    border: #000 1px solid;
+    font-weight: 600;
 }
 
 section a::before {
@@ -160,7 +165,7 @@ section a::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #007bff;
+    background: #76B900;
     z-index: -1;
     transform: translateX(-100%);
     transition: none;
@@ -176,7 +181,7 @@ section a.animate-out::before {
 
 section a:hover,
 section a:active {
-    color: #fff;
+    color: #000000;
 }
 
 #animated-desc {
@@ -274,17 +279,19 @@ section a:active {
 .about-text a {
     display: inline-block;
     padding: 10px 20px;
-    /*background: #007bff;*/
-    color: #000;
+    background: #000000;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
     transition: all 0.3s ease;
-    border: 1px solid #007bff;
+    border: 1px solid #ffffff;
+    font-weight: 600;
 }
 
 .about-text a:hover {
-    background: #007bff;
-    color: #fff;
+    background: #76b900;
+    color: #000000;
+    transition: 0.5s;
 }
 
 
@@ -321,19 +328,15 @@ section a:active {
 .connect-btn a {
     display: inline-block;
     padding: 12px 30px;
-    background: #ffffff;
+    background: #000000;
     text-decoration: none;
     border-radius: 5px;
     transition: all 0.3s ease;
     cursor: pointer;
-    color: #000;
-    border: 1px solid #007bff;
+    color: #ffffff;
+    border: 1px solid #000000;
 }
 
-.connect-btn a:hover {
-    background: #007bff;
-    color: #fff;
-}
 
 .services {
     align-items: center;
