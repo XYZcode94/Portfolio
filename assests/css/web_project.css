@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: #f0f4fa;
+    color: #0f172a;
+}
+
+/* HEADER */
+.site-header {
+    position: sticky;
+    top: 0;
+    background: #f0f4fa;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+
+.contact-btn {
+    background: #16a34a;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+/* MAIN */
+.main-content {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.projects-section h2,
+.tech-section h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1.2rem;
+}
+
+.project-desc {
+    margin: 0.8rem 0;
+    color: #475569;
+}
+
+/* TECH TAGS */
+.project-tech {
+    display: flex;
+    gap: 0.6rem;
+    margin: 1rem 0;
+}
+
+.tech {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tech.html {
+    background: #ffe5d0;
+    color: #c2410c;
+}
+
+.tech.css {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.tech.js {
+    background: #fef9c3;
+    color: #92400e;
+}
+
+/* LINKS */
+.project-links {
+    margin-top: 1rem;
+}
+
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 1rem;
+    padding: 5px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid #e5e7eb;
+    background-color: #120f0f;
+}
+
+.btn-link:hover {
+    color: #000000;
+    border-color: #000000;
+    background-color: #12b012;
+}
+
+/* IDEA NOTE */
+.project-idea {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    background: #ecfdf5;
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+
+/* TECHNOLOGIES */
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tech-list span {
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 999px;
+}
+
+/* FOOTER */
+.site-footer {
+    margin-top: 5rem;
+    padding: 2.5rem;
+    background: #f0f4fa;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border-top: #000 1px solid;
+}
+
+.footer-links a {
+    color: #000000;
+    margin: 0 0.6rem;
+    font-size: 1.2rem;
+}
+
+/* CONTACT MODAL */
+.contact-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.contact-box {
+    background: #ffffff;
+    padding: 2rem;
+    max-width: 420px;
+    margin: 10% auto;
+    border-radius: 16px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.contact-submit {
+    background: #16a34a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 999px;
+    width: 100%;
+    font-weight: 600;
+}
+
+.close-btn {
+    float: right;
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: red;
+}
+
+/* SCROLL TOP */
+#scrollTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #16a34a;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Horizontal project layout */
+.project-card.horizontal {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 15px 0;
+}
+
+/* Image sizing (reduced dominance) */
+.project-card.horizontal .project-image {
+    flex: 0 0 280px;
+}
+
+.project-card.horizontal .project-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Content area */
+.project-content {
+    flex: 1;
+}
+
+/* Mobile fallback */
+@media (max-width: 768px) {
+    .project-card.horizontal {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .project-card.horizontal .project-image {
+        flex: none;
+    }
+
+    .project-card.horizontal .project-image img {
+        height: 200px;
+    }
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+/* Base style */
+.tech {
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Language colors */
+.tech.html {
+    background: #ffe5d0;
+    color: #c2410c;
+}
+
+.tech.css {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.tech.js {
+    background: #fef9c3;
+    color: #92400e;
+}
+
+.tech.react {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.tech.node {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.tech.git {
+    background: #000000;
+    color: #ffffff;
+}

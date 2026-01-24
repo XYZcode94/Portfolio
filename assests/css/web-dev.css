@@ -25,13 +25,10 @@ body {
 
 /* Header styles */
 header {
-    background: linear-gradient(90deg, var(--primary) 60%, var(--dark) 100%);
-    color: #fff;
-    background-position: center;
-    text-align: center;
-    letter-spacing: 1px;
-    box-shadow: 0 2px 12px rgba(34, 34, 59, 0.08);
-    position: relative;
+    left: 0px;
+    top: 0;
+    position: fixed;
+    height: 100%;
 }
 
 .hero {
@@ -57,22 +54,26 @@ header h1 {
 
 /* Navigation styles */
 nav {
-    background: var(--dark);
-    padding: 1rem 0 0.7rem 0;
-    text-align: center;
-    border-bottom: 1px solid var(--dark);
+    padding: 25px;
+    left: 0px;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #6457a6;
+    border-radius: 5px;
+    margin: 100px 0;
 }
 
 nav a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-    margin: 0 1.2rem;
+    margin: 40px 1.2rem;
     font-weight: 600;
-    font-size: 1.08rem;
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
     transition: color 0.2s, border-bottom 0.2s;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
     display: inline-block;
 }
 
@@ -87,9 +88,8 @@ nav a.active {
 
 /* Main content area */
 main {
-    max-width: 950px;
-    margin: 2.5rem auto 2rem auto;
-    padding: 2.2rem 2rem;
+    max-width: 1000px;
+    padding: 2.2rem 2rem;   
     background: #fff;
     border-radius: 14px;
     box-sizing: border-box;
