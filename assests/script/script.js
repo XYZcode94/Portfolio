@@ -85,7 +85,7 @@ window.addEventListener("scroll", function () {
 
 // Open a specific page when a card with a specific id is clicked
 const cardLinks = {
-    "web-development": "assests/pages/web-development.html",
+    "web-development": "assests/pages/web_project.html",
     "mobile-development": "assests/pages/mobile-development.html",
     "ui-ux-design": "assests/pages/ui-ux-design.html",
     "database-management": "assests/pages/database-management.html",
