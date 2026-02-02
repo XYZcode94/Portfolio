@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 0;
+    top: -1px;
     transition: background 0.3s ease;
     z-index: 1000;
 }
@@ -83,6 +83,7 @@ nav ul li {
     display: none;
     cursor: pointer;
     position: relative;
+    color: #ff0000;
 }
 
 .bar {
@@ -112,12 +113,13 @@ nav ul li a.active:hover {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     padding: 20px;
     font-size: 24px;
     color: #333;
+    flex-wrap: wrap; /* Fix for overflow */
 }
 
 .hero-content {
@@ -127,17 +129,17 @@ section {
 }
 
 section h1 {
-    font-size: 72px;
+    font-size: clamp(36px, 10vw, 72px); /* Scale down for mobile */
     margin-bottom: 20px;
 }
 
 section h2 {
-    font-size: 70px;
+    font-size: clamp(30px, 8vw, 70px); /* Scale down for mobile */
     margin-bottom: 20px;
 }
 
 section p {
-    font-size: 30px;
+    font-size: clamp(16px, 4vw, 30px); /* Scale down for mobile */
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -249,17 +251,19 @@ section a:active {
     align-items: center;
     padding: 100px;
     background: #ffffff;
+    flex-wrap: wrap; /* Fix for overflow */
 
 }
 
 .about-content img {
-    width: 350px;
-    margin: 0 100px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 20px;
 }
 
 .about-content h2,
 .services-cards h3 {
-    font-size: 50px;
+    font-size: clamp(30px, 5vw, 50px);
     margin-bottom: 15px;
     color: #000;
     font-family: "Open Sans", sans-serif;
@@ -267,6 +271,8 @@ section a:active {
 
 .about-text {
     align-items: center;
+    flex: 1;
+    min-width: 300px;
 }
 
 .about-text p,
@@ -301,6 +307,7 @@ section a:active {
     align-items: center;
     background: #e1effe;
     padding: 50px;
+    flex-wrap: wrap; /* Fix for overflow */
 }
 
 .connect-text {
@@ -309,11 +316,11 @@ section a:active {
 
 .connect-text,
 .connect-btn {
-    margin: 0 60px;
+    margin: 20px;
 }
 
 .connect-text h2 {
-    font-size: 50px;
+    font-size: clamp(30px, 5vw, 50px);
     margin-bottom: 15px;
     color: #000;
     font-family: "Open Sans", sans-serif;
@@ -465,7 +472,7 @@ section a:active {
 }
 
 .contact-content h3 {
-    font-size: 50px;
+    font-size: clamp(30px, 5vw, 50px);
     margin-bottom: 15px;
     color: #000;
 }
@@ -553,6 +560,16 @@ footer p {
     color: #40f60e;
     transform: scale(1.2) rotate(-8deg);
 }
+
+.bi {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.bi:hover {
+    color: #40f60e;
+}
+
 
 .fa-facebook-f,
 .fa-twitter,
@@ -642,9 +659,11 @@ footer p {
 
     .nav-bar {
         margin: 0 10px;
-        flex-direction: column;
         align-items: flex-start;
         transition: all 0.3s ease;
+    }
+    #first_logo{
+        width: 50%;
     }
 
     header {
@@ -665,25 +684,34 @@ footer p {
     nav ul {
         width: 100vw;
         position: absolute;
-        top: 60px;
+        top: 55px;
         left: 0;
-        flex-direction: column;
         margin: 0;
-        background: #ffffff;
         padding: 20px 0;
+
+        display: flex;
+        flex-direction: column;
+
+        background: #76b900;
         z-index: 2;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-        transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+
         max-height: 0;
         overflow: hidden;
         opacity: 0;
         transform: translateY(-20px);
+
+        transition:
+            max-height 0.35s ease,
+            opacity 0.25s ease,
+            transform 0.25s ease;
     }
 
     nav ul.show {
-        max-height: 500px;
+        max-height: 100vh;   /* safer than fixed 500px */
         opacity: 1;
         transform: translateY(0);
+        display: flex;
     }
 
     nav ul li {
@@ -702,7 +730,7 @@ footer p {
     section {
         font-size: 18px;
         padding: 10px;
-        height: 50vh;
+        height: auto;
     }
 
     .about {
