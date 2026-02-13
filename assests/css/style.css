@@ -730,7 +730,7 @@ footer p {
     section {
         font-size: 18px;
         padding: 10px;
-        height: auto;
+        min-height: 50vh;
     }
 
     .about {
@@ -742,6 +742,10 @@ footer p {
         width: 80vw;
         margin: 0 0 20px 0;
         max-width: 300px;
+    }
+
+    #paragraph{
+        text-align: justify;
     }
 
     .about-text {
